@@ -7,7 +7,6 @@ import {useEffect, useState} from "react";
 export default function Home() {
   const titleWords = ["Spielfilme", "Dokfilme", "Werbung", "Events"]
   const [titleWord, setTitleWord] = useState(titleWords[0])
-  const [timer, setTimer] = useState(0)
 
   useEffect(() => {
     let timerId;
