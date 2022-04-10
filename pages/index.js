@@ -9,24 +9,6 @@ export default function Home() {
   const [titleWord, setTitleWord] = useState(titleWords[0])
   const [timer, setTimer] = useState(0)
 
-  console.log("Rerender: " + titleWord)
-
-  /*
-  useEffect(() => {
-    console.log("useEffect timer ")
-    let lastTitleIdx = titleWords.indexOf(titleWord)
-    console.log("before: " + lastTitleIdx)
-    lastTitleIdx = (lastTitleIdx+1) % titleWords.length
-    console.log(lastTitleIdx, titleWord, titleWords[lastTitleIdx])
-
-    setTitleWord(JSON.parse(JSON.stringify(titleWords[lastTitleIdx])))
-  }, [timer])
-
-  useEffect(() => {
-    console.log("Blubber " + timer)
-  }, [timer])
-*/
-
   useEffect(() => {
     let timerId;
       console.log("useEffect init")
@@ -37,8 +19,6 @@ export default function Home() {
           return titleWords[lastTitleIdx]
         })
       },5000)
-    //}
-    //return () => clearInterval(timerId);
   }, [])
 
   return (
