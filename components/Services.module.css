@@ -1,0 +1,17 @@
+
+
+.card {
+    margin-top: 40px;
+    /*border: solid 1px white;*/
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.icon {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.icon img {
+    max-width: 40%;
+    max-height: 90px;
+}

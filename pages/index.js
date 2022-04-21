@@ -3,6 +3,7 @@ import React from "react";
 import {Col, Container, Nav, Navbar, NavDropdown, Row} from 'react-bootstrap'
 import styles from '../styles/Home.module.css'
 import {useEffect, useState} from "react";
+import Services from "../components/Services";
 
 export default function Home() {
   const titleWords = ["Spielfilme", "Dokfilme", "Werbung", "Events"]
@@ -39,7 +40,7 @@ export default function Home() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="ms-auto">
-                <Nav.Link href="#home">SERVICES</Nav.Link>
+                <Nav.Link href="/Services">SERVICES</Nav.Link>
                 <Nav.Link href="#link">PROJEKTE</Nav.Link>
                 <Nav.Link href="#link">STUDIOS</Nav.Link>
               </Nav>
@@ -84,6 +85,7 @@ export default function Home() {
           </Container>
         </div>
       </div>
+      <Services />
     </>
   )
 }
