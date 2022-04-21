@@ -5,7 +5,7 @@ import styles from '../styles/Home.module.css'
 import {useEffect, useState} from "react";
 import TSZNavigation from "../components/Navigation";
 
-export default function Home() {
+export default function Studios() {
 
   return (
     <>
@@ -18,7 +18,7 @@ export default function Home() {
       <Container>
         <Row>
           <Col xs={7}>
-            Projekte
+            Studios
           </Col>
         </Row>
       </Container>

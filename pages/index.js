@@ -4,6 +4,7 @@ import {Col, Container, Nav, Navbar, NavDropdown, Row} from 'react-bootstrap'
 import styles from '../styles/Home.module.css'
 import {useEffect, useState} from "react";
 import Services from "../components/Services";
+import TSZNavigation from '../components/Navigation';
 
 export default function Home() {
   const titleWords = ["Spielfilme", "Dokfilme", "Werbung", "Events"]
@@ -32,21 +33,7 @@ export default function Home() {
         <video id="background-video" autoPlay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
           <source src="https://assets.codepen.io/6093409/river.mp4" type="video/mp4"/>
         </video>
-        <Navbar expand="lg" bg="dark" variant="dark">
-          <Container>
-            <Navbar.Brand href="#home" onClick={() => setTitleWord("Events")}>
-              <img src="tszlogo.png" className={styles.tszLogo}/>
-            </Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="ms-auto">
-                <Nav.Link href="/Services">SERVICES</Nav.Link>
-                <Nav.Link href="#link">PROJEKTE</Nav.Link>
-                <Nav.Link href="#link">STUDIOS</Nav.Link>
-              </Nav>
-            </Navbar.Collapse>
-          </Container>
-        </Navbar>
+        <TSZNavigation />
         <Container>
           <Row>
             <Col className={styles.mainTitleWrapper}>

@@ -13,9 +13,9 @@ export default function TSZNavigation() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link href="/Services">SERVICES</Nav.Link>
             <Nav.Link href="/Projects">PROJEKTE</Nav.Link>
             <Nav.Link href="/Studios">STUDIOS</Nav.Link>
+            <Nav.Link href="/Team">TEAM</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
