@@ -42,10 +42,10 @@ export default function Home() {
             </Col>
           </Row>
           <Row>
-            <Col xs={7}>
+            <Col xs={6} md={7}>
             </Col>
-            <Col xs={3}>
-              <img src="soundmeter.png" style={{height:120}}/>
+            <Col xs={6} md={3}>
+              <img src="soundmeter.png" style={{height:120}} className="soundwave" />
             </Col>
           </Row>
         </Container>
