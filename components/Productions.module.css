@@ -1,0 +1,35 @@
+.wrapper {
+    padding-top: 2rem;
+    padding-bottom: 10rem;
+
+    /* background-image: url('/services/services-background.jpg'); */
+    background: rgb(9,9,121);
+    background: linear-gradient(180deg, rgba(9,9,121,1) 0%, rgba(0,0,0,1) 55%);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: black;
+}
+
+.wrapper h1 {
+    margin-bottom: 5rem;
+}
+
+.agencyCaption {
+    font-weight: 700;
+}
+.agencyCaption + span + .ourJobCaption {
+    margin-left: 1em;
+}
+.ourJobCaption {
+    font-weight: 700;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}

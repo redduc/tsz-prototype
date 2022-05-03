@@ -4,6 +4,7 @@ import {Col, Container, Nav, Navbar, NavDropdown, Row} from 'react-bootstrap'
 import styles from '../styles/Home.module.css'
 import {useEffect, useState} from "react";
 import Services from "../components/Services";
+import Productions from "../components/Productions";
 import TSZNavigation from '../components/Navigation';
 
 export default function Home() {
@@ -73,6 +74,7 @@ export default function Home() {
         </div>
       </div>
       <Services />
+      <Productions />
     </>
   )
 }
