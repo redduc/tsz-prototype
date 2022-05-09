@@ -25,6 +25,9 @@
     font-weight: 700;
 }
 
+
+
+
 .card img {
     width: 100%;
 }
@@ -32,4 +35,13 @@
 .card h2 {
     margin-top: 2rem;
     margin-bottom: 1rem;
+}
+
+.card .myCaption {
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: left;
+    padding-bottom: 1.5rem;
 }

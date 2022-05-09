@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Container, Row } from 'react-bootstrap'
+import { Carousel, Col, Container, Row } from 'react-bootstrap'
 import styles from '/components/Productions.module.css'
 
 const productions = [
@@ -12,35 +12,11 @@ const productions = [
   },
   {
     id: 2,
-    title: 'Swisscom "Gemeinsam bereit"',
+    title: 'Swisscom \"Gemeinsam bereit\"',
     ourJob: '!!!Film: Stories AG Regie: Michael Fueter Tonproduktion: Tonstudios Z',
     image: 'SwisscomGemeinsamBereit.jpg',
   },
 ]
-
-
-
-function Production({ production }) {
-  return (
-    <>
-      <div class="carousel-item active">
-        <div className={styles.card}>
-          <div>
-            <img src={'productions/' + production.image}/>
-          </div>
-          <h2>{production.title}</h2>
-          <p>
-            {production.agency != null && <span className={styles.agencyCaption}>Agentur: </span>}
-            {production.agency != null && <span>{production.agency}</span>}
-            
-            {production.ourJob != null && <span className={styles.ourJobCaption}>Tonstudios Z: </span>}
-            {production.ourJob != null && <span>{production.ourJob}</span>}
-          </p>
-        </div>
-      </div>
-    </>
-  )
-}
 
 export default function Productions() {
   return (
@@ -58,21 +34,29 @@ export default function Productions() {
         <Row>
           <Col xs={0} md={2}></Col>
           <Col xs={12} md={8}>
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">                
-                {productions.map(production =>
-                  <Production key={production.id} production={production} />
+            <Carousel>
+              {productions.map(p =>
+
+                  <Carousel.Item key={p.id} interval={10000}>
+                    <div className={styles.card}>
+                      <img src={'productions/' + p.image} />
+                      <Carousel.Caption className={styles.myCaption}>
+                        <h2>{p.title}</h2>
+                        <p>
+                          {p.agency != null &&
+                            <>
+                              <span className={styles.agencyCaption}>Agentur: </span>
+                              <span>{p.agency}</span>
+                            </>
+                          }                      
+                          {p.ourJob != null && <span className={styles.ourJobCaption}>Tonstudios Z: </span>}
+                          {p.ourJob != null && <span>{p.ourJob}</span>}
+                        </p>
+                      </Carousel.Caption>                    
+                    </div>
+                  </Carousel.Item> 
                 )}
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
+            </Carousel>
           
           </Col>
           <Col xs={0} md={2}></Col>
