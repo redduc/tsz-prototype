@@ -3,10 +3,11 @@ import React from "react";
 import {Col, Container, Nav, Navbar, NavDropdown, Row} from 'react-bootstrap'
 import styles from '../styles/Home.module.css'
 import {useEffect, useState} from "react";
+import TSZNavigation from '../components/Navigation';
 import Services from "../components/Services";
 import Productions from "../components/Productions";
 import Studios from "../components/Studios";
-import TSZNavigation from '../components/Navigation';
+import Technology from "../components/Technology";
 
 export default function Home() {
   const titleWords = ["Spielfilme", "Dokfilme", "Werbung", "Events"]
@@ -77,6 +78,7 @@ export default function Home() {
       <Services />
       <Productions />
       <Studios />
+      <Technology />
     </>
   )
 }

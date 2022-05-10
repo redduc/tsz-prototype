@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Container, Row } from 'react-bootstrap'
-import styles from '/components/Studios.module.css'
+import styles from '/components/Technology.module.css'
 
 const activeStudio = 1;
 const studios = [
@@ -42,7 +42,7 @@ function Studio({studio, studios}) {
   )
 }
 
-export default function Studios() {
+export default function Technology() {
   return (
     <div className={styles.wrapper}>
       <div className={styles.backgroundImage}></div>
@@ -50,23 +50,37 @@ export default function Studios() {
           <Row>
             <Col xs={0} md={2}></Col>
             <Col xs={12} md={8}>
-              <p className="red">&gt; Studios</p>
-              <h1>Hier spielt die Musik.</h1>
+              <p className="red">&gt; Technik</p>
+              <h1>Dank neuster Technik nie ungewünscht a cappella.</h1>
             </Col>
             <Col xs={0} md={2}></Col>
           </Row>
           <Row>
             <Col xs={0} md={2}></Col>
             <Col xs={12} md={8}>
-              <p>Seit über 30 Jahren geben wir für nationale und internationale Auftraggeber den Ton an.</p>
-              <p>Als Full-Service-Unternehmen bieten wir sämtliche Leistungen rund um Audioproduktionen an und treffen mit unserer Erfahrung stets den richtigen Ton.</p>
-              <p>Ob Werbung, TV, Film, Web, Sounddesign, Musikkomposition, Sprachadaption oder nationale sowie internationale Sprechervermittlung - bei uns können Sie alle Register ziehen.</p>
-              <p>Wir bieten Ihnen akustisch perfekt ausgebaute Aufnahme- und Regieräume an verkehrsgünstiger Lage in Zürich Nord.</p>
-              <div className={styles.studios}>
+              <p>Wir investieren laufend in hochwertiges Equipment. Damit sorgen wir für einfache und schnelle Arbeitsabläufe und unterstützen den kreativen Prozess.</p>
+              <p>&nbsp;</p>
+              <Row>
+                <Col xs={12} md={6}>
+                  <ul>
+                    <li>Pro Tools und digitale Grossmischkonsolen - MC5 / S6.</li>
+                    <li>Dolby zertifiziertes Kinoatelier</li>
+                    <li>Taker für Synchronaufnahmen.</li>
+                  </ul>
+                </Col>
+                <Col xs={12} md={6}>
+                  <ul>
+                    <li>Sprachaufnahmen via IP. Mayah SIP, Source Connect und SessionLinkPro.</li>
+                    <li>Kunden Dial-In via Telefon, Skype, oder Videokonferenz.</li>
+                    <li>Audiorestauration mit Cedar, Cube-Tec u.a.</li>
+                  </ul>
+                </Col>
+              </Row>
+              {/* <div className={styles.studios}>
                 { studios.map(s =>
                   <Studio key={s.id} studio={s} studios={studios} />
                 )}
-              </div>
+              </div> */}
             </Col>
             <Col xs={0} md={2}></Col>
           </Row>
