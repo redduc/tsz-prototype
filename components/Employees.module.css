@@ -1,0 +1,66 @@
+.wrapper {
+  padding-top: 2rem;
+  padding-bottom: 10rem;
+
+  /* background-image: url('/services/services-background.jpg'); */
+  background: rgb(9,9,121);
+  background: linear-gradient(180deg, rgba(9,9,121,1) 0%, rgba(0,0,0,1) 55%);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: black;
+}
+
+.wrapper h1 {
+  margin-bottom: 5rem;
+}
+
+.employees {
+  margin-top: 4rem;
+}
+.employees .employee {
+  display: none;
+  position: relative;
+}
+.employees .employee.active {
+  display: block;
+}
+.employees .select {  
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 10%, rgba(0,0,0,0) 100%);
+  padding-top: 1.5rem;
+}
+.employees .select a {
+  flex: 1 1 0;
+  align-self: flex-end;
+  display: block;
+  margin-bottom: 0;
+  padding-bottom: 0.5rem;
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+  color: #FFF;
+  border-bottom: 0.4rem solid transparent;
+}
+.employees .select a span {
+  display: block;
+}
+.employees .select a .name {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.employees .select a .role {
+  font-size: 0.7em;
+  height: 2.1rem;
+}
+.employees .employee a:hover,
+.employees .employee a.active {
+  border-bottom: 0.4rem solid #f15f60;
+}
+.employees .employee img {
+  width: 100%;
+}

@@ -2,46 +2,6 @@ import React from "react";
 import { Col, Container, Row } from 'react-bootstrap'
 import styles from '/components/Technology.module.css'
 
-const activeStudio = 1;
-const studios = [
-  {
-    id: 1,
-    title: 'Studio 1',
-    text: 'Crescendo für klangstarke Präsentationen mit der Dolby lizenzierten Produktions-Suite',
-    image: 'Studio1.jpg'
-  },
-  {
-    id: 2,
-    title: 'Studio 2',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    image: 'Studio2.jpg'
-  },
-  {
-    id: 3,
-    title: 'Studio 3',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    image: 'Studio3.jpg'
-  },
-]
-
-function Studio({studio, studios}) {
-  let wrapperClass = (studio.id === activeStudio  ? [styles.studio, styles.active].join(' ') : styles.studio)
-
-  return (
-    <div className={wrapperClass}>
-      <div className={styles.image}>
-        <img src={'studios/'  + studio.image} className="img-fluid" />
-        <div className={styles.studioSelect}>
-          { studios.map(s =>            
-            <a href="javascript:void(0);" className={(s.id === studio.id ? styles.active : '')} key={s.id}>{s.title}</a>            
-          )}
-        </div>
-      </div>
-      <p>{studio.text}</p>
-    </div>
-  )
-}
-
 export default function Technology() {
   return (
     <div className={styles.wrapper}>
@@ -76,11 +36,6 @@ export default function Technology() {
                   </ul>
                 </Col>
               </Row>
-              {/* <div className={styles.studios}>
-                { studios.map(s =>
-                  <Studio key={s.id} studio={s} studios={studios} />
-                )}
-              </div> */}
             </Col>
             <Col xs={0} md={2}></Col>
           </Row>

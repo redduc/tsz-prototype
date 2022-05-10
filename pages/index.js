@@ -8,6 +8,7 @@ import Services from "../components/Services";
 import Productions from "../components/Productions";
 import Studios from "../components/Studios";
 import Technology from "../components/Technology";
+import Employees from "../components/Employees";
 
 export default function Home() {
   const titleWords = ["Spielfilme", "Dokfilme", "Werbung", "Events"]
@@ -79,6 +80,7 @@ export default function Home() {
       <Productions />
       <Studios />
       <Technology />
+      <Employees />
     </>
   )
 }
