@@ -65,28 +65,28 @@ export default function Employees() {
   return (
     <div className={styles.wrapper}>
       <div className={styles.backgroundImage}></div>
-        <Container>
-          <Row>
-            <Col xs={0} md={2}></Col>
-            <Col xs={12} md={8}>
-              <p className="red">&gt; Mitarbeiter</p>
-              <h1>Wir sorgen für die Musik.</h1>
-            </Col>
-            <Col xs={0} md={2}></Col>
-          </Row>
-          <Row>
-            <Col xs={0} md={2}></Col>
-            <Col xs={12} md={8}>
-              <p>Seit 30 Jahren erarbeiten wir hochwertige Tonprodukte für sämtliche Medien. Damit Sie bei uns die erste Geige spielen können, unterstützen wir Sie bei Ihrem Projekt mit unserer langjährigen Erfahrung, hoher Qualität und einer erstklassigen Dienstleistungspalette.</p>
-              <div className={styles.employees}>
-                { employees.map(e =>
-                  <Employee key={e.id} employee={e} employees={employees} />
-                )}
-              </div>
-            </Col>
-            <Col xs={0} md={2}></Col>
-          </Row>
-        </Container>
+      <Container>
+        <Row>
+          <Col xs={0} lg={1} xxl={2}></Col>
+          <Col xs={12} lg={10} xxl={8}>
+            <p className="red">&gt; Mitarbeiter</p>
+            <h1>Wir sorgen für die Musik.</h1>
+          </Col>
+          <Col xs={0} lg={1} xxl={2}></Col>
+        </Row>
+        <Row>
+          <Col xs={0} xxl={1}></Col>
+          <Col xs={12} xxl={10}>
+            <p>Seit 30 Jahren erarbeiten wir hochwertige Tonprodukte für sämtliche Medien. Damit Sie bei uns die erste Geige spielen können, unterstützen wir Sie bei Ihrem Projekt mit unserer langjährigen Erfahrung, hoher Qualität und einer erstklassigen Dienstleistungspalette.</p>
+            <div className={styles.employees}>
+              { employees.map(e =>
+                <Employee key={e.id} employee={e} employees={employees} />
+              )}
+            </div>
+          </Col>
+          <Col xs={0} xxl={1}></Col>
+        </Row>
+      </Container>
     </div>
   )
 }

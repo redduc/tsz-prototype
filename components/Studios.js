@@ -46,31 +46,31 @@ export default function Studios() {
   return (
     <div className={styles.wrapper}>
       <div className={styles.backgroundImage}></div>
-        <Container>
-          <Row>
-            <Col xs={0} md={2}></Col>
-            <Col xs={12} md={8}>
-              <p className="red">&gt; Studios</p>
-              <h1>Hier spielt die Musik.</h1>
-            </Col>
-            <Col xs={0} md={2}></Col>
-          </Row>
-          <Row>
-            <Col xs={0} md={2}></Col>
-            <Col xs={12} md={8}>
-              <p>Seit über 30 Jahren geben wir für nationale und internationale Auftraggeber den Ton an.</p>
-              <p>Als Full-Service-Unternehmen bieten wir sämtliche Leistungen rund um Audioproduktionen an und treffen mit unserer Erfahrung stets den richtigen Ton.</p>
-              <p>Ob Werbung, TV, Film, Web, Sounddesign, Musikkomposition, Sprachadaption oder nationale sowie internationale Sprechervermittlung - bei uns können Sie alle Register ziehen.</p>
-              <p>Wir bieten Ihnen akustisch perfekt ausgebaute Aufnahme- und Regieräume an verkehrsgünstiger Lage in Zürich Nord.</p>
-              <div className={styles.studios}>
-                { studios.map(s =>
-                  <Studio key={s.id} studio={s} studios={studios} />
-                )}
-              </div>
-            </Col>
-            <Col xs={0} md={2}></Col>
-          </Row>
-        </Container>
+      <Container>
+        <Row>
+          <Col xs={0} lg={1} xxl={2}></Col>
+          <Col xs={12} lg={10} xxl={8}>
+            <p className="red">&gt; Studios</p>
+            <h1>Hier spielt die Musik.</h1>
+          </Col>
+          <Col xs={0} lg={1} xxl={2}></Col>
+        </Row>
+        <Row>
+          <Col xs={0} xxl={1}></Col>
+          <Col xs={12} xxl={10}>
+            <p>Seit über 30 Jahren geben wir für nationale und internationale Auftraggeber den Ton an.</p>
+            <p>Als Full-Service-Unternehmen bieten wir sämtliche Leistungen rund um Audioproduktionen an und treffen mit unserer Erfahrung stets den richtigen Ton.</p>
+            <p>Ob Werbung, TV, Film, Web, Sounddesign, Musikkomposition, Sprachadaption oder nationale sowie internationale Sprechervermittlung - bei uns können Sie alle Register ziehen.</p>
+            <p>Wir bieten Ihnen akustisch perfekt ausgebaute Aufnahme- und Regieräume an verkehrsgünstiger Lage in Zürich Nord.</p>
+            <div className={styles.studios}>
+              { studios.map(s =>
+                <Studio key={s.id} studio={s} studios={studios} />
+              )}
+            </div>
+          </Col>
+          <Col xs={0} xxl={1}></Col>
+        </Row>
+      </Container>
     </div>
   )
 }

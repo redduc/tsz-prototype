@@ -99,13 +99,13 @@ export default function Services() {
       <div className={styles.backgroundImage}></div>
       <Container>
         <Row>
-          <Col xs={0} md={2}></Col>
-          <Col xs={12} md={8}>
+          <Col xs={0} lg={1} xxl={2}></Col>
+          <Col xs={12} lg={10} xxl={8}>
             <p className="red">&gt; Produktionen</p>
             <h1>Hörprobe gefällig?</h1>
             <p>Als Full Service-Unternehme bieten wir sämtliche Leistungen rund um Audioproduktion.</p>
           </Col>
-          <Col xs={0} md={2}></Col>
+          <Col xs={0} lg={1} xxl={2}></Col>
         </Row>
         <Row>
           { services.map(service =>

@@ -24,16 +24,16 @@ export default function Productions() {
       <div className={styles.backgroundImage}></div>
       <Container>
         <Row>
-          <Col xs={0} md={2}></Col>
-          <Col xs={12} md={8}>
+          <Col xs={0} lg={1} xxl={2}></Col>
+          <Col xs={12} lg={10} xxl={8}>
             <p className="red">&gt; Produktionen</p>
             <h1>Und so klingt das.</h1>
           </Col>
-          <Col xs={0} md={2}></Col>
+          <Col xs={0} lg={1} xxl={2}></Col>
         </Row>
         <Row>
-          <Col xs={0} md={2}></Col>
-          <Col xs={12} md={8}>
+          <Col xs={0} xxl={1}></Col>
+          <Col xs={12} xxl={10}>
             <Carousel>
               {productions.map(p =>
 
@@ -59,7 +59,7 @@ export default function Productions() {
             </Carousel>
           
           </Col>
-          <Col xs={0} md={2}></Col>
+          <Col xs={0} xxl={1}></Col>
         </Row>
       </Container>
     </div>
