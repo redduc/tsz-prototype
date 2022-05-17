@@ -2,8 +2,9 @@ import Head from 'next/head'
 import React from "react";
 import {Col, Container, Row} from 'react-bootstrap'
 import styles from '../styles/Menu.module.css'
-import TSZNavigation from "../components/Navigation";
 import Link from 'next/link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons'
 
 export default function Studios() {
 
@@ -29,7 +30,7 @@ export default function Studios() {
                   <a>Home</a>
                 </Link>
                 <Link href="/Projects">
-                  <a>Projekte</a>
+                  <a className={styles.active}>Projekte</a>
                 </Link>
                 <Link href="/Studios">
                   <a>Studios</a>
@@ -48,6 +49,10 @@ export default function Studios() {
                 <p>- Parkplätze vorhanden</p>
                 <p className={styles.phone}><span>Telefon</span> <a href="tel:0041443253388">+41 44 325 33 88</a></p>
                 <p className={styles.email}><a href="mailto:admin@tonstudiosz.com">admin@tonstudiosz.com</a></p>
+                <div className={styles.icons}>
+                  <FontAwesomeIcon icon={faLinkedin} />
+                  <FontAwesomeIcon icon={faInstagram} />
+                </div>
               </div>
             </Col>
           </Row>

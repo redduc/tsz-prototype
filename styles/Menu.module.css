@@ -7,6 +7,7 @@
   font-size: 3rem;
 }
 .menuText {
+  margin-top: 2rem;
   color: #f15f60;
   text-transform: uppercase;
 }
@@ -23,6 +24,7 @@
   font-size: 5rem;
   font-weight: 700;
 }
+.menuEntries a.active,
 .menuEntries a:hover {
   color: #f15f60;
 }
@@ -45,6 +47,18 @@
 .address .email {
   margin-top: 2rem;
 }
+.address .icons {
+  margin-top: 3rem;
+}
+.address .icons svg {
+  color: #FFF;
+  height: 3rem;
+  margin-left: 1rem;
+}
+.address .icons svg:first-child {
+  margin-left: 0;
+}
+
 
 
 @media only screen and (max-width: 768px) {
