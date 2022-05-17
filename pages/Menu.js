@@ -3,11 +3,10 @@ import React from "react";
 import {Col, Container, Row} from 'react-bootstrap'
 import styles from '../styles/Menu.module.css'
 import Link from 'next/link';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { FaLinkedin, FaInstagram, FaChevronRight } from "react-icons/fa";
+import { IoClose } from "react-icons/io5";
 
-export default function Studios() {
-
+export default function Menu() {
   return (
     <>
       <Head>
@@ -19,8 +18,8 @@ export default function Studios() {
         <Container>
           <Row>
             <Col xs={12}>
-              <div className={styles.close}>x</div>
-              <p className={styles.menuText}>&gt; Menu</p>              
+              <div className={styles.close}><IoClose /></div>
+              <p className={styles.menuText}><FaChevronRight /> Menu</p>              
             </Col>
           </Row>
           <Row>
@@ -50,8 +49,8 @@ export default function Studios() {
                 <p className={styles.phone}><span>Telefon</span> <a href="tel:0041443253388">+41 44 325 33 88</a></p>
                 <p className={styles.email}><a href="mailto:admin@tonstudiosz.com">admin@tonstudiosz.com</a></p>
                 <div className={styles.icons}>
-                  <FontAwesomeIcon icon={faLinkedin} />
-                  <FontAwesomeIcon icon={faInstagram} />
+                  <FaLinkedin />
+                  <FaInstagram />
                 </div>
               </div>
             </Col>
