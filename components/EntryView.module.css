@@ -1,0 +1,33 @@
+
+.tszLogo {
+  height: 90px;
+}
+.clientLogos {
+  align-content: center;
+}
+.mainrowwrapper {
+  height: 100vh;
+  position: relative;
+}
+.myFooter {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 12vh;
+  background-color: rgba(0,0,0,0.6);
+  color: white;
+}
+.mainTitleWrapper {
+  padding-top: 18vh;
+}
+.mainTitle {
+  font-size: 4em;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 0;
+}
+.mainTitle span {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  -webkit-text-fill-color: rgb(0,0,0,0);
+}

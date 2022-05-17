@@ -1,8 +1,6 @@
 import Head from 'next/head'
 import React from "react";
 import {Col, Container, Nav, Navbar, NavDropdown, Row} from 'react-bootstrap'
-import styles from '../styles/Home.module.css'
-import {useEffect, useState} from "react";
 import TSZNavigation from "../components/Navigation";
 
 export default function Team() {
