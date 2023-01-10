@@ -1,4 +1,5 @@
 {
+  "homepage": "https://redduc.github.io/tsz-prototype/",
   "name": "tsz-prototype",
   "version": "0.1.0",
   "private": true,
@@ -13,6 +14,7 @@
   },
   "dependencies": {
     "bootstrap": "^5.1.3",
+    "gh-pages": "^4.0.0",
     "next": "12.1.4",
     "react": "18.0.0",
     "react-bootstrap": "^2.2.2",
