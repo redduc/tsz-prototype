@@ -5,7 +5,7 @@
   border-color: white;
 }
 .bg-dark {
-  background-color: rgb(0,0,0,0.6) !important;
+  background-color: rgb(0,0,0,0) !important; /* menü balken */
 }
 
 #background-video {
