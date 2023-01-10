@@ -34,11 +34,8 @@ export default function EntryView() {
             </Col>
           </Row>
           <Row>
-            <Col xs={6} md={7}>
-            </Col>
-            <Col xs={6} md={3}>
-              <img src="soundmeter.png" style={{height:120}} className="soundwave" />
-            </Col>
+            <Col xs={6} md={7}></Col>
+            <Col xs={6} md={3}></Col>
           </Row>
         </Container>
         <div className={styles.myFooter}>
