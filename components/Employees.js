@@ -1,4 +1,3 @@
-//import Image from "next/image";
 import React from "react";
 import { Col, Container, Row } from 'react-bootstrap'
 import styles from '/components/Employees.module.css'
@@ -48,7 +47,7 @@ function Employee({employee, employees}) {
 
   return (
     <div className={wrapperClass}>
-      { /*<Image src={'/Employees/'  + employee.image} className="img-fluid" width={1920} height={1080} /> */ }
+      <img src={'employees/' + employee.image} className="img-fluid" />
       <div className={styles.select}>
         { employees.map(e =>            
           <a href="javascript:void(0);" className={(e.id === employee.id ? styles.active : '')} key={e.id}>
