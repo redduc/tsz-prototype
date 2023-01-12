@@ -22,7 +22,7 @@ export default function EntryView() {
   return (
     <>
       <div className={styles.mainrowwrapper}>
-        <video id="background-video" autoPlay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+        <video id="background-video" autoPlay loop muted >
           <source src="tsz-movie.mp4" type="video/mp4"/>
         </video>
         <TSZNavigation />
