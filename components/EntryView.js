@@ -23,21 +23,10 @@ export default function EntryView() {
     <>
       <div className={styles.mainrowwrapper}>
         <video id="background-video" autoPlay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
-          <source src="https://assets.codepen.io/6093409/river.mp4" type="video/mp4"/>
+          <source src="tsz-movie.mp4" type="video/mp4"/>
         </video>
         <TSZNavigation />
-        <Container>
-          <Row>
-            <Col className={styles.mainTitleWrapper}>
-              <p className={styles.mainTitle}>Grosse Töne</p>
-              <p className={styles.mainTitle}>für <span>{titleWord}</span></p>
-            </Col>
-          </Row>
-          <Row>
-            <Col xs={6} md={7}></Col>
-            <Col xs={6} md={3}></Col>
-          </Row>
-        </Container>
+
         <div className={styles.myFooter}>
           <Container>
             <Row style={{padding: 20}}>
