@@ -5,7 +5,7 @@ import TSZNavigation from '../components/Navigation';
 import {reveal} from '/components/utils';
 
 export default function EntryView() {
-  const titleWords = ["Spielfilme", "Dokfilme", "Werbung", "Events"]
+  const titleWords = ["Spielfilme", "Werbung", "Events", "ADR", "Dokfilme"]
   const [titleWord, setTitleWord] = useState(titleWords[0])
 
   useEffect(() => {
@@ -19,16 +19,28 @@ export default function EntryView() {
         })
       },5000)
       
-    window.addEventListener("scroll", () => reveal(styles.reveal, styles.active));
+    window.addEventListener("scroll", () => reveal(styles.reveal, styles.active, 50));
   }, [])
 
   return (
     <>
       <div className={styles.mainrowwrapper}>
-        <video id="background-video" className="background-video" playsinline autoPlay loop muted>
+        <video id="background-video" className="background-video" playsInline autoPlay loop muted>
           <source src="tsz-movie.mp4" type="video/mp4"/>
         </video>
         <TSZNavigation />
+        {/* <Container>
+          <Row>
+            <Col className={styles.mainTitleWrapper}>
+              <p className={styles.mainTitle}>Grosse Töne</p>
+              <p className={styles.mainTitle}>für <span>{titleWord}</span></p>
+            </Col>
+          </Row>
+          <Row>
+            <Col xs={6} md={7}></Col>
+            <Col xs={6} md={3}></Col>
+          </Row>
+        </Container> */}
 
         <div className={styles.myFooter + ' ' + styles.reveal}>
               <div className={styles.footerArrow}>

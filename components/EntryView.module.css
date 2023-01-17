@@ -63,13 +63,19 @@
   padding-top: 18vh;
 }
 .mainTitle {
-  font-size: 4em;
+  font-size: 4rem;
   font-weight: bold;
   color: white;
   margin-bottom: 0;
 }
 .mainTitle span {
-  -webkit-text-stroke-width: 1px;
+  /* -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
-  -webkit-text-fill-color: rgb(0,0,0,0);
+  -webkit-text-fill-color: rgb(0,0,0,0); */
+}
+
+@media (max-width: 575px) {
+  .mainTitle {
+    font-size: 3rem;
+  }
 }
