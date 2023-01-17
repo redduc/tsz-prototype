@@ -13,6 +13,11 @@
     margin-top: 4em;
     margin-bottom: 3em;
 }
+.wrapper h2 {
+    margin-top: 3em;
+    margin-bottom: 1em;
+    text-align: center;
+}
 
 .cardCol {
     padding-top: 1.5rem;
@@ -20,11 +25,12 @@
 }
 
 .card {
+    background-color: #000;
     height: 100%;
-    /* border: solid 1px white; */
+    border: solid 4px rgba(209, 209, 209, 0.8);
     margin-left: 6px;
     margin-right: 6px;
-    padding: 1rem 2rem;
+    padding: 0.75rem 1.5rem;
 }
 
 .icon {

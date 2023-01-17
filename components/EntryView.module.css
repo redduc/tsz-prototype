@@ -10,12 +10,54 @@
   position: relative;
 }
 .myFooter {
-  position: absolute;
+  /*background-color: rgba(0,0,0,0.6); footer balken */
+  /* position: absolute;
   width: 100%;
   bottom: 0;
   height: 12vh;
-  /*background-color: rgba(0,0,0,0.6); footer balken */
+  color: white; */  
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 45px;
   color: white;
+}
+.footerArrow {
+  position: relative;
+  margin: 0 auto;
+  width: 90px;
+  height: 90px;
+  background-color: #f0575a;
+  border-radius: 45px;
+  text-align: center;
+}
+.footerArrow svg {
+  position: absolute;  
+  left: 36px;
+  top: 12px;
+  fill: #FFF;
+  opacity: 1;
+  transition: opacity 1s;
+}
+.footerArrow .logoSmall {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 85px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+.reveal {}
+.active {
+}
+
+.myFooter.active .footerArrow svg {
+  opacity: 0;
+  transition: opacity 1s;
+}
+.myFooter.active .footerArrow .logoSmall {
+  opacity: 1;
+  transition: opacity 2s;
 }
 .mainTitleWrapper {
   padding-top: 18vh;

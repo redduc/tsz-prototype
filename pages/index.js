@@ -17,10 +17,10 @@ export default function Home() {
       </Head>
       <EntryView />
       <Services />
-      <Productions />
-      <Studios />
-      <Technology />
-      <Employees />
+      {/* <Productions /> */}
+      {/* <Studios /> */}
+      {/* <Technology /> */}
+      {/* <Employees /> */}
     </>
   )
 }

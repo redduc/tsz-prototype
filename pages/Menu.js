@@ -29,7 +29,7 @@ export default function Menu() {
                   <a>Home</a>
                 </Link>
                 <Link href="/Projects">
-                  <a className={styles.active}>Projekte</a>
+                  <a className={styles.active}>Services</a>
                 </Link>
                 <Link href="/Studios">
                   <a>Studios</a>
