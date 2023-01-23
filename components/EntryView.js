@@ -9,19 +9,26 @@ export default function EntryView() {
   const [titleWord, setTitleWord] = useState(titleWords[0])
 
   useEffect(() => {
+    console.log(titleWord)
+  }, [titleWord])
+  useEffect(() => {
     let timerId;
       //console.log("useEffect init")
       timerId = setInterval(() => {
+        console.log("interval...")
         setTitleWord((tw) => {
           let lastTitleIdx = titleWords.indexOf(tw)
           lastTitleIdx = (lastTitleIdx+1) % titleWords.length
           return titleWords[lastTitleIdx]
         })
-      },5000)
+      },3000)
       
     window.addEventListener("scroll", () => reveal(styles.reveal, styles.active, 50));
   }, [])
 
+  function TitleSpan({titleWord}) {
+    return (<>für <span>{titleWord}</span></>)
+  }
   return (
     <>
       <div className={styles.mainrowwrapper}>
@@ -29,18 +36,18 @@ export default function EntryView() {
           <source src="tsz-movie.mp4" type="video/mp4"/>
         </video>
         <TSZNavigation />
-        {/* <Container>
-          <Row>
+        <Container>
+          <Row style={{marginTop: 60}}>
             <Col className={styles.mainTitleWrapper}>
               <p className={styles.mainTitle}>Grosse Töne</p>
-              <p className={styles.mainTitle}>für <span>{titleWord}</span></p>
+              <p className={styles.mainTitle}><TitleSpan titleWord={titleWord}/></p>
             </Col>
           </Row>
           <Row>
             <Col xs={6} md={7}></Col>
             <Col xs={6} md={3}></Col>
           </Row>
-        </Container> */}
+        </Container>
 
         <div className={styles.myFooter + ' ' + styles.reveal}>
               <div className={styles.footerArrow}>
