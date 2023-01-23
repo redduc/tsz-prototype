@@ -9,13 +9,9 @@ export default function EntryView() {
   const [titleWord, setTitleWord] = useState(titleWords[0])
 
   useEffect(() => {
-    console.log(titleWord)
-  }, [titleWord])
-  useEffect(() => {
     let timerId;
       //console.log("useEffect init")
       timerId = setInterval(() => {
-        console.log("interval...")
         setTitleWord((tw) => {
           let lastTitleIdx = titleWords.indexOf(tw)
           lastTitleIdx = (lastTitleIdx+1) % titleWords.length
