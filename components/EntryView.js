@@ -46,16 +46,16 @@ export default function EntryView() {
         </Container>
 
         <div className={styles.myFooter + ' ' + styles.reveal}>
-              <div className={styles.footerArrow}>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ee2222" className="bi bi-chevron-compact-down" viewBox="0 0 16 16">
-                  <path fillRule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z"/>
-                </svg>
-                <img src="tszlogo.png" className={styles.logoSmall} />
-              </div>
-          <Container>
+          <div className={styles.footerArrow}>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ee2222" className="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+              <path fillRule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z"/>
+            </svg>
+            <img src="tszlogo.png" className={styles.logoSmall} />
+          </div>
+          {/* <Container>
             <Row style={{padding: 20}}>
             </Row>
-            {/* <Row style={{padding: 20}}>
+            <Row style={{padding: 20}}>
               <Col align="center"><img src="clientlogos/logo-kaegi.png" style={{height: 30}} /></Col>
               <Col align="center"><img src="clientlogos/logo-cailler.png" style={{height: 40}} /></Col>
               <Col align="center"><img src="clientlogos/logo-arte.png" style={{height: 25}} /></Col>
@@ -72,8 +72,8 @@ export default function EntryView() {
                         d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z"/>
                 </svg>
               </Col>
-            </Row> */}
-          </Container>
+            </Row>
+          </Container>*/}
         </div>
       </div>
     </>
