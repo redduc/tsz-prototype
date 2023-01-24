@@ -1,7 +1,8 @@
 
-import React from "react";
+import React, {useEffect} from "react";
 import {Col, Container, Nav, Navbar, NavDropdown, Row} from 'react-bootstrap'
 import styles from '/components/Services.module.css'
+import {reveal} from '/components/utils';
 
 const services = [
   {
@@ -92,11 +93,9 @@ const services = [
   },
 ]
 
-
-
 function Service({service}) {
   return (
-    <Col xs={12} md={6} lg={4} xl={3} className={styles.cardCol}>
+    <Col xs={12} md={6} lg={4} xl={3} className={styles.cardCol + ' ' + styles.reveal}>
       <div className={styles.card}>
         <div className={styles.icon}>
           <img src={'services/' + service.image}  />
@@ -113,7 +112,11 @@ function Service({service}) {
 }
 
 
-export default function Services() {
+export default function Services() {  
+  useEffect(() => {      
+    window.addEventListener("scroll", () => reveal(styles.reveal, styles.active, 100));
+  }, [])
+
   return (
     <div id="servicearea" className={styles.wrapper}>
       <div className={styles.backgroundImage}></div>
