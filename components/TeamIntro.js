@@ -31,7 +31,7 @@ export default function TeamIntro() {
           </Row>
         </div>
         <div className={styles.imageWrapper}>
-          <img src={'about/teamintro.jpg'} class={styles.imgLeft}  />
+          <img src={'about/teamintro.jpg'} className={styles.imgLeft}  />
         </div>
       </div>
       <div id="teamintro" className={styles.wrapperTwoColumn + ' ' + styles.whitebg}>
@@ -60,7 +60,7 @@ export default function TeamIntro() {
           </Row>
         </div>
         <div className={styles.imageWrapper}>
-          <img src={'about/teamintro.jpg'} class={styles.imgLeft}  />
+          <img src={'about/teamintro.jpg'} className={styles.imgLeft}  />
         </div>
       </div>
     </>
