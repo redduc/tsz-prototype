@@ -1,0 +1,41 @@
+.wrapperTwoColumn {
+  height: 100vh;
+  height: 100svh;
+  display: grid;
+  column-gap: 15px;
+  grid-template-columns: 1fr 1fr;
+}
+.redbg {
+  background-color: #f25a59;
+}
+
+.textWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 3rem;
+}
+.qrCodeWrapper {
+  margin-bottom: 2rem;
+}
+.contact p {
+  margin-bottom: 0.4rem;
+}
+
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden
+}
+.imgLeft {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%
+}
+
+@media (max-width: 768px) {
+  .wrapperTwoColumn {
+    grid-template-columns: 1fr;
+  }
+}
