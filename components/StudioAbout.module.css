@@ -1,3 +1,44 @@
+.wrapperTwoColumn {
+  min-height: 100vh;
+  min-height: 100svh;
+  display: grid;
+  column-gap: 15px;
+  grid-template-columns: 1fr 1fr;
+}
+.whitebg h1 {
+  color: #f25a59;
+}
+.whitebg p {
+  color: #000;
+}
+
+.menuItems {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.textWrapper {
+  margin: 3rem;
+}
+.textWrapper h1 {
+  text-transform: uppercase;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+.textWrapper p {
+  font-size: 1.5rem;
+}
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden
+}
+.imgLeft {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%
+}
 
 .studios {
   position: relative;
