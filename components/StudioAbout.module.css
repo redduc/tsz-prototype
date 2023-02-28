@@ -1,0 +1,44 @@
+
+.studios {
+  position: relative;
+  min-height: 100vh;
+  min-height: 100svh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.studioa .text {
+  padding-top: 3rem;
+  padding-left: 2rem;
+  max-width: 30%;
+}
+
+@media (max-width: 768px) {
+  .studioa .text {
+    max-width: 100%;
+  }
+}
+
+.studioentrance .text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding-top: 6rem;
+  padding-left: 2rem;
+  padding-right: 1rem;
+  background-color: rgba(0,0,0,0.5);
+  width: 30%;
+}
+.studioentrance .text h2 {
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .studioentrance .text {
+    position: relative;
+    width: 100%;
+    padding: 2rem;
+  }
+}

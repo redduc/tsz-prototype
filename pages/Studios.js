@@ -4,6 +4,7 @@ import {Col, Container, Nav, Navbar, NavDropdown, Row} from 'react-bootstrap'
 import TSZNavigation from "../components/Navigation";
 import TeamIntro from "../components/TeamIntro";
 import TeamMember from "../components/TeamMember";
+import StudioAbout from "../components/StudioAbout";
 
 export default function Studios() {
 
@@ -17,6 +18,7 @@ export default function Studios() {
       {/* <TSZNavigation /> */}
       <TeamIntro />
       <TeamMember />
+      <StudioAbout />
     </>
   )
 }

@@ -23,6 +23,7 @@
 }
 
 .imageWrapper {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,6 +33,27 @@
   flex-shrink: 0;
   min-width: 100%;
   min-height: 100%
+}
+
+
+.TeamMember_blackbg {
+  background-color: #000;
+}
+.TeamMember_blackbg .textWrapper {
+  margin-top: 4rem;
+  align-items: flex-start;
+}
+.TeamMember_blackbg .name {
+  margin-bottom: 0;
+  font-weight: 700;
+}
+.TeamMember_blackbg .position {
+  margin-bottom: 1rem;
+}
+.TeamMember_blackbg .qrCodeWrapper {
+  position: absolute;
+  bottom: 2rem;
+  right: 1rem;
 }
 
 @media (max-width: 768px) {
