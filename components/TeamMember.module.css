@@ -1,6 +1,7 @@
 .wrapperTwoColumn {
-  height: 100vh;
-  height: 100svh;
+  min-height: 480px;
+  /* height: 100vh;
+  height: 100svh; */
   display: grid;
   column-gap: 15px;
   grid-template-columns: 1fr 1fr;
@@ -46,9 +47,11 @@
 .TeamMember_blackbg .name {
   margin-bottom: 0;
   font-weight: 700;
+  text-transform: uppercase;
 }
 .TeamMember_blackbg .position {
   margin-bottom: 1rem;
+  text-transform: uppercase;
 }
 .TeamMember_blackbg .qrCodeWrapper {
   position: absolute;
