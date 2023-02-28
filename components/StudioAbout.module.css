@@ -1,6 +1,6 @@
 .studioIntroText > div {
-  min-height: 50vh;
-  min-height: 50svh;
+  min-height: 100vh;
+  min-height: 100svh;
 }
 .menuItems {
   font-weight: 700;
