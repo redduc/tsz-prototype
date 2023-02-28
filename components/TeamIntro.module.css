@@ -1,13 +1,11 @@
-.wrapperTwoColumn {
-  min-height: 100vh;
-  min-height: 100svh;
-  display: grid;
-  column-gap: 15px;
-  grid-template-columns: 1fr 1fr;
-}
-
 .redbg {
   background-color: #f25a59;
+  min-height: 100vh;
+  min-height: 100svh;
+}
+.whitebg {
+  min-height: 100vh;
+  min-height: 100svh;
 }
 .whitebg h1 {
   color: #f25a59;
@@ -72,9 +70,6 @@
 
 
 @media (max-width: 768px) {
-  .wrapperTwoColumn {
-    grid-template-columns: 1fr;
-  }
   .menuItems {
     font-size: 1.2rem;
   }
