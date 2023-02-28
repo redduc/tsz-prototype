@@ -1,4 +1,4 @@
-.studioIntroText {
+.studioIntroText > div {
   min-height: 50vh;
   min-height: 50svh;
 }
@@ -64,15 +64,25 @@
   z-index: 1;
 }
 
+.studios .text {
+  font-size: 1.2em;
+}
+
 .studioa .text {
   padding-top: 3rem;
   padding-left: 2rem;
   max-width: 30%;
 }
+.studioa .text p {
+  text-shadow: 1px 1px 1px rgb(0 0 0 / 50%);
+}
 
 @media (max-width: 768px) {  
   .imgColBg {
     height: 60svh;
+  }
+  .menuItems {
+    font-size: 1.2rem;
   }
   .studioa .text {
     max-width: 100%;

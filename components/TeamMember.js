@@ -21,9 +21,9 @@ export default function TeamMember() {
             </div>
             <img src="tszlogo.png" className={styles.logo} alt="Z Logo" />
           </Col>
-          <Col xs={12} md={6} className={styles.imgCol} >
+          <Col xs={12} md={6} className={styles.imgCol} style={{backgroundImage: "url('about/teammember-renzo.jpg')"}}>
             <div className={styles.imageWrapper}>
-              <img src={'about/teammember-renzo.jpg'} className={styles.imgLeft}  />
+              {/* <img src={'about/teammember-renzo.jpg'} className={styles.imgLeft}  /> */}
             </div>
           </Col>
         </Row>

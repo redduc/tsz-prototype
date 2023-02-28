@@ -55,5 +55,6 @@
 @media (max-width: 768px) {
   .projects .cornerLogo {
     right: -10px;
+    overflow-x: clip;
   }
 }
