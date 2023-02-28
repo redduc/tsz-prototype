@@ -13,10 +13,10 @@ export default function TSZNavigation() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link href="/#servicearea">Service</Nav.Link>
-            <Nav.Link href="/Studios">About</Nav.Link>
-            <Nav.Link href="/Team">Work</Nav.Link>
-            <Nav.Link href="/Menu">Contact</Nav.Link>
+            <Nav.Link href="./#servicearea">Service</Nav.Link>
+            <Nav.Link href="./Studios">About</Nav.Link>
+            <Nav.Link href="./Team">Work</Nav.Link>
+            <Nav.Link href="./Menu">Contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
