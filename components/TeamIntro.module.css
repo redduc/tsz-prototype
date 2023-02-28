@@ -1,6 +1,6 @@
 .wrapperTwoColumn {
-  height: 100vh;
-  height: 100svh;
+  min-height: 100vh;
+  min-height: 100svh;
   display: grid;
   column-gap: 15px;
   grid-template-columns: 1fr 1fr;
@@ -36,20 +36,35 @@
 }
 
 .imageWrapper {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden
+  overflow: hidden;
 }
 .imgLeft {
   flex-shrink: 0;
   min-width: 100%;
   min-height: 100%
 }
+.imageWrapper .logo {
+  position: absolute;
+  top: 2rem;
+  width: 80px;
+  z-index: 1;
+}
 
 
 @media (max-width: 768px) {
   .wrapperTwoColumn {
     grid-template-columns: 1fr;
+  }
+  .imageWrapper {
+    height: 65svh;
+  }
+  .imageWrapper .logo {
+    top: -40px;
+    left: 3rem;
+    
   }
 }

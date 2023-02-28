@@ -1,17 +1,7 @@
-.wrapperTwoColumn {
-  min-height: 100vh;
-  min-height: 100svh;
-  display: grid;
-  column-gap: 15px;
-  grid-template-columns: 1fr 1fr;
+.studioIntroText {
+  min-height: 50vh;
+  min-height: 50svh;
 }
-.whitebg h1 {
-  color: #f25a59;
-}
-.whitebg p {
-  color: #000;
-}
-
 .menuItems {
   font-weight: 700;
   font-size: 1.5rem;
@@ -24,9 +14,25 @@
   text-transform: uppercase;
   margin-top: 4rem;
   margin-bottom: 2rem;
+  color: #f25a59;
 }
 .textWrapper p {
   font-size: 1.5rem;
+  color: #000;
+}
+.imgColBg {
+  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.imgColBg .logo {
+  position: absolute;
+  top: 30%;
+  width: 80px;
+  height: 80px;
+  right: -40px;
+  z-index: 1;
 }
 .imageWrapper {
   display: flex;
@@ -48,6 +54,15 @@
   background-position: center center;
   background-repeat: no-repeat;
 }
+.studios .logo {
+  position: absolute;
+  top: 1.5rem;
+  width: 80px;
+  height: 80px;
+  right: 50%;
+  right: calc(50% - 40px);
+  z-index: 1;
+}
 
 .studioa .text {
   padding-top: 3rem;
@@ -55,9 +70,19 @@
   max-width: 30%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) {  
+  .imgColBg {
+    height: 60svh;
+  }
   .studioa .text {
     max-width: 100%;
+    padding-top: 120px;
+    padding-top: calc(3rem + 80px);
+  }
+  .imgColBg .logo {
+    top: -40px;
+    right: 50%;
+    right: calc(50% - 40px);
   }
 }
 
@@ -81,5 +106,7 @@
     position: relative;
     width: 100%;
     padding: 2rem;
+    padding-top: 120px;
+    padding-top: calc(3rem + 80px);
   }
 }

@@ -42,6 +42,18 @@
   font-weight: 600;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 }
+.projects .cornerLogo {
+  position: absolute;
+  bottom: -40px;
+  right: -40px;
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  z-index: 1;
+}
 
 @media (max-width: 768px) {
+  .projects .cornerLogo {
+    right: -10px;
+  }
 }

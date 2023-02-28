@@ -32,6 +32,7 @@ export default function TeamIntro() {
         </div>
         <div className={styles.imageWrapper}>
           <img src={'about/teamintro.jpg'} className={styles.imgLeft}  />
+          <img src="tszlogo.png" className={styles.logo} alt="Z Logo" />
         </div>
       </div>
       <div id="teamintro" className={styles.wrapperTwoColumn + ' ' + styles.whitebg}>
@@ -61,6 +62,7 @@ export default function TeamIntro() {
         </div>
         <div className={styles.imageWrapper}>
           <img src={'about/teamintro.jpg'} className={styles.imgLeft}  />
+          <img src="tszlogo.png" className={styles.logo} alt="Z Logo" />
         </div>
       </div>
     </>

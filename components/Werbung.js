@@ -26,6 +26,7 @@ export default function StudioAbout() {
             <div className={styles.entry}>
               <img src="./werbung/werbung2.jpg" />
               <div className={styles.textwrapper}><p>Swisscom &quot;Gemeinsam bereit&quot;</p></div>
+              <img src="tszlogo.png" className={styles.cornerLogo} alt="Z Logo" />
             </div>  
           </Col>
           <Col md={4} xs={12}>
