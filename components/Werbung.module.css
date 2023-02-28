@@ -1,0 +1,47 @@
+.menubar2 {
+  background-color: #f25a59;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #FFF;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem 2.5rem;
+  flex-wrap: wrap;
+}
+.menubar2 div:first-child {
+  color: #000;
+}
+
+.projects {
+  margin-left: -1px;
+  margin-right: -1px;
+}
+.projects > div {
+  padding: 1px;
+}
+.projects img {
+  width: 100%;
+}
+.projects .entry {
+  position: relative;
+}
+.projects .textwrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: grid;
+  place-items: center;  
+}
+.projects .textwrapper p {
+  text-transform: uppercase;
+  font-weight: 600;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+@media (max-width: 768px) {
+}

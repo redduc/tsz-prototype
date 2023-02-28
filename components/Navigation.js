@@ -15,7 +15,7 @@ export default function TSZNavigation() {
           <Nav className="ms-auto">
             <Nav.Link href="./#servicearea">Service</Nav.Link>
             <Nav.Link href="./Studios">About</Nav.Link>
-            <Nav.Link href="./Team">Work</Nav.Link>
+            <Nav.Link href="./Work">Work</Nav.Link>
             <Nav.Link href="./Menu">Contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>
