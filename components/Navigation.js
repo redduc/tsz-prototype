@@ -16,7 +16,7 @@ export default function TSZNavigation() {
             <Nav.Link href="./#servicearea">Service</Nav.Link>
             <Nav.Link href="./Studios">About</Nav.Link>
             <Nav.Link href="./Work">Work</Nav.Link>
-            <Nav.Link href="./Menu">Contact</Nav.Link>
+            <Nav.Link href="./Contact">Contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

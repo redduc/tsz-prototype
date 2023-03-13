@@ -1,0 +1,66 @@
+.wrapper {
+  background-color: #f25a59;
+  padding-top: 3rem;
+  min-height: 100vh;
+  min-height: 100svh;
+  font-size: 1.2rem;
+}
+
+.textArea h1 {
+  font-size: 3rem;
+  height: 4rem;
+  margin-bottom: 2rem;
+}
+
+/* Address */
+.address {
+  margin-top: 6rem;
+}
+.address p {
+  margin-bottom: 0;
+}
+.address .phone {
+  margin-top: 2rem;
+}
+.address .email {
+  margin-top: 0.5rem;
+}
+.address .phone svg,
+.address .email svg {
+  margin-right: 0.8rem;
+}
+.address .phone a,
+.address .email a {
+  color: #FFF;
+}
+
+.logoIcons {
+  margin-top: 2rem;
+}
+.logoIcons .logo {
+  max-width: 100%;
+  margin-left: -25px;
+}
+.logoIcons .icons svg:first-child {
+  margin-left: 0;
+}
+.logoIcons .icons {
+  display: inline-block;
+  margin-left: 2rem;
+}
+.logoIcons .icons svg {
+  color: #FFF;
+  width: 3rem;
+  height: 3rem;
+  margin-left: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .address {
+    margin-top: 2rem;
+  }
+  .logoIcons .icons {
+    display: block;
+    margin-left: 0;
+  }
+}
