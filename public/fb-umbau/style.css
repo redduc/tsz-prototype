@@ -1,0 +1,243 @@
+.topmenu {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 70;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  letter-spacing: 1px;
+  font-size: 1.1em;
+}
+.topmenu li {
+  display: inline-block;
+  margin: 10px 0;
+}
+.topmenu a {
+  color: #fff;
+  padding: 0 1.1em 1.1em;
+}
+
+.fp-overflow {
+  height: 100%;
+}
+.fp-overflow > .container-fluid {
+  height: 100%;
+}
+.fp-overflow > .container-fluid > .row {
+  height: 100%;  
+}
+
+
+/* team intro */
+/* ------------------------------------------------------------------------- */
+.team-intro {
+  background-color: #424242;
+}
+.team-intro h1 {
+  -webkit-text-stroke: 2px #f25a59;
+  text-stroke: 2px #f25a59;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  font-size: 3.5rem;
+}
+.team-intro .text-wrapper {
+  padding: 6rem 3rem 3rem 3rem;
+  color: #ccc;
+}
+.team-intro .img-col-bg {
+  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../about/teamintro.jpg');
+}
+.team-intro .img-col-bg .logo {
+  position: absolute;
+  top: 1.5rem;
+  width: 80px;
+  height: 80px;
+  right: 50%;
+  right: calc(50% - 40px);
+  z-index: 1;
+}
+.team-intro-red {
+  background-color: #f25a59;
+}
+.team-intro-red h1 {
+  -webkit-text-stroke: 2px #eee;
+  text-stroke: 2px #eee;
+}
+.team-intro-red .text-wrapper {
+  color: #eee;
+}
+
+
+/* team members */
+/* ------------------------------------------------------------------------- */
+.team-members {
+  background-color: #000;
+}
+.team-members .text-wrapper {  
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  margin: 3rem;
+  margin-top: 4rem;
+  color: #ccc;
+}
+.team-members .text-wrapper.name {
+  margin-bottom: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.team-members .text-wrapper .position {
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+/* img qr-code logo */
+.team-members .image-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 100%;
+}
+.team-members .img-left {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%
+}
+.team-members .qr-code-wrapper {
+  position: absolute;
+  bottom: 2rem;
+  right: 1rem;
+}
+.team-members .img-col {
+  position: relative;
+}
+.team-members .img-col .logo {
+  position: absolute;
+  top: 2rem;
+  width: 80px;
+  height: 80px;
+  left: -30px;
+  z-index: 1;
+}
+.team-members .img-col .logo.right {
+  left: auto;
+  right: -30px;
+}
+
+
+/* studio intro */
+/* ------------------------------------------------------------------------- */
+.studio-intro {
+  background-color: #424242;
+}
+.studio-intro h1 {
+  -webkit-text-stroke: 2px #f25a59;
+  text-stroke: 2px #f25a59;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  font-size: 3.5rem;
+}
+.studio-intro .text-wrapper {
+  padding: 6rem 3rem 3rem 3rem;
+  color: #ccc;
+}
+.studio-intro .img-col-bg {
+  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../about/studios-intro.jpg');
+}
+.studio-intro .img-col-bg .logo {
+  position: absolute;
+  top: 1.5rem;
+  width: 80px;
+  height: 80px;
+  right: 50%;
+  right: calc(50% - 40px);
+  z-index: 1;
+}
+
+/* studios */
+/* ------------------------------------------------------------------------- */
+.fp-overflow > .studios {
+  height: 100%;  
+}
+.studios {
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.studios .logo {
+  position: absolute;
+  top: 1.5rem;
+  width: 80px;
+  height: 80px;
+  right: 50%;
+  right: calc(50% - 40px);
+  z-index: 1;
+}
+
+.studios .text {
+  font-size: 1.2em;
+  color: #eee;
+}
+
+/* studio a */
+.studioa {
+  background-image: url('../about/studioa.jpg');
+}
+.studioa .text {
+  padding-top: 7rem;
+  padding-left: 4rem;
+  max-width: 35%;
+}
+.studioa h1 {
+  -webkit-text-stroke: 2px #eee;
+  text-stroke: 2px #eee;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  font-size: 3.5rem;
+}
+.studioa .text p {
+  text-shadow: 1px 1px 1px rgb(0 0 0 / 50%);
+}
+
+/* studio outro */
+/* ------------------------------------------------------------------------- */
+.studio-outro {
+  background-color: #424242;
+}
+.studio-outro h1 {
+  -webkit-text-stroke: 2px #f25a59;
+  text-stroke: 2px #f25a59;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  font-size: 3.5rem;
+}
+.studio-outro .text-wrapper {
+  padding: 6rem 3rem 3rem 3rem;
+  color: #ccc;
+}
+.studio-outro .img-col-bg {
+  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../about/studioentrance.jpg');
+}
+.studio-outro .img-col-bg .logo {
+  position: absolute;
+  top: 1.5rem;
+  width: 80px;
+  height: 80px;
+  right: 50%;
+  right: calc(50% - 40px);
+  z-index: 1;
+}
