@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TSZ Studios</title>
-
+    <link rel="stylesheet" type="text/css" href="./animate.min.css" />
     <link rel="stylesheet" type="text/css" href="./bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="./fullpage.css" />
     <link rel="stylesheet" type="text/css" href="./style.css">
@@ -13,12 +13,12 @@
 <body>
 
   <div id="fullpage">
-    <div class="section team-intro">
+    <div class="section team-intro team-intro-gray">
       <div class="container-fluid">
         <div class="row">
           <div class="col-12 col-md-6">
             <div class="text-wrapper">
-              <h1>Team</h1>
+              <h1 class="">Team</h1>
               <p>Seit 30 Jahren erarbeiten wir hochwertige Tonprodukte für sämtliche Medien. Damit Sie bei uns die erste Geige spielen können, unterstützen wir Sie bei Ihrem Projekt mit unserer langjährigen Erfahrung, hoher Qualität und einer erstklassigen Dienstleistungspalette.</p>
             </div>
           </div>
@@ -31,7 +31,7 @@
         <div class="row">
           <div class="col-12 col-md-6">
             <div class="text-wrapper">
-              <h1>Team</h1>
+              <h1 class="is-animated">Team</h1>
               <p>Seit 30 Jahren erarbeiten wir hochwertige Tonprodukte für sämtliche Medien. Damit Sie bei uns die erste Geige spielen können, unterstützen wir Sie bei Ihrem Projekt mit unserer langjährigen Erfahrung, hoher Qualität und einer erstklassigen Dienstleistungspalette.</p>
             </div>
           </div>
@@ -40,16 +40,16 @@
       </div>
     </div>
     <div class="section team-members">
-      <div class="slide">
+      <div class="slide active">
         <div class="container-fluid">
           <div class="row">
             <div class="col-12 col-md-6 order-md-2">
               <div class="text-wrapper">
                 <div>
                   <div class="contact">
-                    <p class="name">RENZO D&apos;ALBERTO</p>
+                    <h1>RENZO D&apos;ALBERTO</h1>
                     <p class="position">INHOUSE PRODUCER / GL</p>
-                    <p>Schon als Kind war Renzo fasziniert von
+                    <p class="text">Schon als Kind war Renzo fasziniert von
                       Klängen, Tönen, Tasten und Knöpfen. Als
                       Jugendlicher komponierte er auf seinen
                       Synthesizern anstaN Musik seine eigenen
@@ -89,7 +89,7 @@
               <div class="text-wrapper">
                 <div>
                   <div class="contact">
-                    <p class="name">Tom Wenger</p>
+                    <h1>Tom Wenger</h1>
                     <p class="position">Technischer Leiter & Sound Engineer</p>
                     <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
                   </div>
@@ -115,7 +115,7 @@
               <div class="text-wrapper">
                 <div>
                   <div class="contact">
-                    <p class="name">Laura Herold</p>
+                    <h1>Laura Herold</h1>
                     <p class="position">Officemanagerin & Produktionsplanung</p>
                     <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
                   </div>
@@ -187,24 +187,71 @@
 
 
 
-  <script type="text/javascript" src="./fullpage.js"></script>
+  <script type="text/javascript" src="./jquery.min.js"></script>
+  <script type="text/javascript" src="./fullpage.extensions.min.js"></script>
+  <script type="text/javascript" src="./fullpage.dragAndMove2.limited.min.js"></script>
   <script type="text/javascript">
-    var myFullpage = new fullpage('#fullpage', {
-      // Navigation
-      menu: '#menu',
-      lockAnchors: false,
-      anchors:['teamintro', 'teamintro2', 'teammembers', 'studiointro', 'studioa', 'studioautro'],
-      navigation: false,
-      navigationPosition: 'right',
-      navigationTooltips: ['firstSlide', 'secondSlide'],
-      showActiveTooltip: false,
-      slidesNavigation: false,
-      slidesNavPosition: 'bottom',
+    // var myFullpage = new fullpage('#fullpage', {
+    //   // Navigation
+    //   menu: '#menu',
+    //   lockAnchors: false,
+    //   anchors:['teamintro', 'teamintro2', 'teammembers', 'studiointro', 'studioa', 'studioautro'],
+    //   navigation: false,
+    //   navigationPosition: 'right',
+    //   navigationTooltips: ['firstSlide', 'secondSlide'],
+    //   showActiveTooltip: false,
+    //   slidesNavigation: false,
+    //   slidesNavPosition: 'bottom',
 
-      scrollHorizontally: true,
-      //autoScrolling:true,
-      //sectionsColor: ['#424242', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff']
-    });
+    //   scrollHorizontally: true,
+    //   //autoScrolling:true,
+    //   //sectionsColor: ['#424242', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff']
+    // });
+
+    (function($) {  
+      $('.team-intro-gray h1').addClass('animate__animated animate__fadeInLeftBig');
+      $('.team-intro-gray .logo').addClass('animate_infinite');
+
+      'use strict';
+
+      // initialize fullPage
+      $('#fullpage').fullpage({        
+        anchors:['teamintro', 'teamintro2', 'teammembers', 'studiointro', 'studioa', 'studioautro'],
+        navigationTooltips: ['Team Intro', 'Team Intro Rot', 'Team Members', 'Studio Intro', 'Studio A', 'Studio Outro'],
+        // Navigation
+        menu: '#menu',
+        css3: true,
+        lockAnchors: false,
+        navigation: true,
+        navigationPosition: 'right',
+        showActiveTooltip: false,
+        slidesNavigation: true,
+        slidesNavPosition: 'bottom',
+        scrollHorizontally: true,
+        dragAndMove: false,
+        //dragAndMoveKey: 'YWx2YXJvdHJpZ28uY29tX0EyMlpISmhaMEZ1WkUxdmRtVT0wWUc=',
+
+        onLeave: function(index, nextIndex, direction) {
+          if( index.index == 0 && nextIndex.index == 1) { 
+            // team intro red
+            $('.team-intro-red h1').addClass('animate__animated animate__fadeInLeftBig');
+            $('.team-intro-red .logo').addClass('animate_infinite');
+          } else if(( index.index == 0 || index.index == 1) && nextIndex.index == 2) {
+            // team members
+            $('.team-members h1').addClass('animate__animated animate__fadeInLeftBig');
+            $('.team-members .text-wrapper .text').addClass('animate__animated animate__fadeInUpBig').css('animation-delay', '.3s'); 
+            $('.team-members .img-left').addClass('animate__animated animate__fadeIn').css('animation-delay', '.3s');
+            $('.team-members .qr-code-wrapper').addClass('animate__animated animate__fadeIn').css('animation-delay', '1.0s');
+          } else if(( index.index == 0 || index.index == 1 || index.index == 2) && nextIndex.index == 3) {
+            // studio intro
+            $('.studio-intro h1').addClass('animate__animated animate__fadeInLeftBig');
+            $('.studio-intro .logo').addClass('animate_infinite');
+          }
+        }
+      });
+      
+    })(jQuery);
+
   </script>
 </body>
 </html>
