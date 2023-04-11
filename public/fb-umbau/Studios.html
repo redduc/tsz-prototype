@@ -231,7 +231,7 @@
 
         onLeave: function(index, nextIndex, direction) {
           //if( index.index == 0 && nextIndex.index == 0) { 
-          if(nextIndex.index == 0) { 
+          if(nextIndex.index == 0) {
             // team intro red
             $('.team-intro-red h1').addClass('animate__animated animate__fadeInLeftBig');
             $('.team-intro-red .logo').addClass('animate_infinite');
@@ -239,7 +239,7 @@
           } else if(nextIndex.index == 1) {
             // team members
             $('.team-members h1').addClass('animate__animated animate__fadeInLeftBig');
-            $('.team-members .text-wrapper .text').addClass('animate__animated animate__fadeInUpBig').css('animation-delay', '.3s'); 
+            //$('.team-members .text-wrapper .text').addClass('animate__animated animate__fadeInUpBig').css('animation-delay', '.3s'); 
             $('.team-members .img-left').addClass('animate__animated animate__fadeIn').css('animation-delay', '.3s');
             $('.team-members .qr-code-wrapper').addClass('animate__animated animate__fadeIn').css('animation-delay', '1.0s');
           //} else if(( index.index == 0 || index.index == 1 || index.index == 2) && nextIndex.index == 3) {
@@ -248,15 +248,26 @@
             $('.studio-intro h1').addClass('animate__animated animate__fadeInLeftBig');
             $('.studio-intro .logo').addClass('animate_infinite');
           }
+
+          if(index.index === 0) { 
+            // team intro red
+            $('.team-intro-red h1').removeClass('animate__animated animate__fadeInLeftBig');
+          }
+          if(index.index === 1) {
+            // team members
+            $('.team-members h1').removeClass('animate__animated animate__fadeInLeftBig');
+             //$('.team-members .text-wrapper .text').removeClass('animate__animated animate__fadeInUpBig');
+            $('.team-members .img-left').removeClass('animate__animated animate__fadeIn');
+             $('.team-members .qr-code-wrapper').removeClass('animate__animated animate__fadeIn');
+          }
+          if( index.index === 2) {
+            // studio intro
+            $('.studio-intro h1').removeClass('animate__animated animate__fadeInLeftBig');
+          }
         }
       });
       
     })(jQuery);
-
-    function moveRight() {
-      //l(this, "left") ? fullpage_api.moveSlideLeft() : fullpage_api.moveSlideRight()
-      
-    }
 
   </script>
 </body>
