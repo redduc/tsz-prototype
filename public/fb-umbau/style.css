@@ -1,3 +1,46 @@
+/* @font-face Regel für die Regular-Version */
+@font-face {
+  font-family: 'Metropolis';
+  src: url('./fonts/Metropolis-Regular.woff2') format('woff2'),
+       url('./fonts/Metropolis-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* @font-face Regel für die Medium-Version */
+@font-face {
+  font-family: 'Metropolis';
+  src: url('./fonts/Metropolis-Medium.woff2') format('woff2'),
+       url('./fonts/Metropolis-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* @font-face Regel für die SemiBold-Version */
+@font-face {
+  font-family: 'Metropolis';
+  src: url('./fonts/Metropolis-SemiBold.woff2') format('woff2'),
+       url('./fonts/Metropolis-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* @font-face Regel für die Bold-Version */
+@font-face {
+  font-family: 'Metropolis';
+  src: url('./fonts/Metropolis-Bold.woff2') format('woff2'),
+       url('./fonts/Metropolis-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Verwendung der Schriftart */
+body {
+  font-family: 'Metropolis', sans-serif;
+}
+
+
+
 .animate_infinite {
   animation: pulse; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 2s; /* don't forget to set a duration! */
@@ -33,6 +76,42 @@
   height: 100%;  
 }
 
+#fp-nav ul li a span, #menu-line, .fp-slidesNav ul li a span {
+  background: #fff;
+}
+.fp-slidesNav.fp-bottom {
+  text-align: center;
+  bottom: 0.6rem;
+}
+
+
+.my-arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -45px;
+  width: 70px;
+  height: 90px;
+  z-index: 99;
+  -webkit-appearance: none;
+  background: 0 0;
+  border: 0;
+  outline: 0;
+}
+.my-arrow.left {
+  left: 35px;
+}
+.my-arrow.right {
+  right: 35px;
+}
+
+
+.team-intro .text-column,
+.team-members .text-column,
+.studio-intro .text-column {
+  display: flex;
+  align-items: center;
+}
 
 /* team intro */
 /* ------------------------------------------------------------------------- */
@@ -40,10 +119,6 @@
   background-color: #424242;
 }
 .team-intro h1 {
-  -webkit-text-stroke: 2px #f25a59;
-  text-stroke: 2px #f25a59;
-  -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
   font-size: 3.5rem;
 }
 .team-intro .text-wrapper {
@@ -60,11 +135,14 @@
 .team-intro .img-col-bg .logo {
   position: absolute;
   top: 1.5rem;
+  top: 10%;
+  /* top:  calc(50% - 40px); */
+  left: -40px;
   width: 80px;
   height: 80px;
-  right: 50%;
-  right: calc(50% - 40px);
   z-index: 1;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 50%;
 }
 .team-intro-red {
   background-color: #f25a59;
@@ -89,13 +167,10 @@
   align-items: flex-start;
   margin: 3rem;
   margin-top: 5rem;
+  margin-right: 7rem;
   color: #ccc;
 }
 .team-members .text-wrapper h1 {
-  -webkit-text-stroke: 1px #ccc;
-  text-stroke: 1px #ccc;
-  -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
   font-size: 2.5rem;
 }
 .team-members .text-wrapper .name {
@@ -118,14 +193,18 @@
 }
 .team-members .img-left {
   flex-shrink: 0;
-  min-width: 100%;
-  min-height: 100%
+  width: 110%;
+  /* min-width: 100%;
+  min-height: 100% */
 }
 .team-members .qr-code-wrapper {
   position: absolute;
-  bottom: 2rem;
+  bottom: 3rem;
   right: 1rem;
   z-index: 5;
+}
+.team-members .qr-code-wrapper img {
+  width: 100px;
 }
 .team-members .img-col {
   position: relative;
@@ -150,10 +229,6 @@
   background-color: #424242;
 }
 .studio-intro h1 {
-  -webkit-text-stroke: 2px #f25a59;
-  text-stroke: 2px #f25a59;
-  -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
   font-size: 3.5rem;
 }
 .studio-intro .text-wrapper {
@@ -213,10 +288,6 @@
   max-width: 35%;
 }
 .studioa h1 {
-  -webkit-text-stroke: 2px #eee;
-  text-stroke: 2px #eee;
-  -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
   font-size: 3.5rem;
 }
 .studioa .text p {
@@ -229,10 +300,6 @@
   background-color: #424242;
 }
 .studio-outro h1 {
-  -webkit-text-stroke: 2px #f25a59;
-  text-stroke: 2px #f25a59;
-  -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
   font-size: 3.5rem;
 }
 .studio-outro .text-wrapper {

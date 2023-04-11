@@ -13,37 +13,37 @@
 <body>
 
   <div id="fullpage">
-    <div class="section team-intro team-intro-gray">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12 col-md-6">
-            <div class="text-wrapper">
-              <h1 class="">Team</h1>
-              <p>Seit 30 Jahren erarbeiten wir hochwertige Tonprodukte für sämtliche Medien. Damit Sie bei uns die erste Geige spielen können, unterstützen wir Sie bei Ihrem Projekt mit unserer langjährigen Erfahrung, hoher Qualität und einer erstklassigen Dienstleistungspalette.</p>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 img-col-bg"><img src="../tszlogo.png" class="logo" alt="Z Logo" /></div>
-        </div>
-      </div>
-    </div>
     <div class="section team-intro team-intro-red">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-md-6 text-column">
             <div class="text-wrapper">
               <h1 class="is-animated">Team</h1>
               <p>Seit 30 Jahren erarbeiten wir hochwertige Tonprodukte für sämtliche Medien. Damit Sie bei uns die erste Geige spielen können, unterstützen wir Sie bei Ihrem Projekt mit unserer langjährigen Erfahrung, hoher Qualität und einer erstklassigen Dienstleistungspalette.</p>
             </div>
           </div>
-          <div class="col-12 col-md-6 img-col-bg"><img src="../tszlogo.png" class="logo" alt="Z Logo" /></div>
+          <div class="col-12 col-md-6 img-col-bg"><img src="../tszlogo.png" class="logo animate_infinite" alt="Z Logo" /></div>
         </div>
       </div>
     </div>
     <div class="section team-members">
+      
+      <button class="my-arrow left" onclick="fullpage_api.moveSlideLeft()">
+        <svg width="60px" height="80px" viewBox="0 0 50 80" xml:space="preserve">
+            <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="
+                45.63,75.8 0.375,38.087 45.63,0.375 ">
+        </polyline></svg>
+    </button>
+    <button class="my-arrow right" onclick="fullpage_api.moveSlideRight()">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60px" height="80px" viewBox="0 0 50 80" xml:space="preserve">
+            <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="
+                0.375,0.375 45.63,38.087 0.375,75.8 ">
+        </polyline></svg>
+    </button>
       <div class="slide active">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-12 col-md-6 order-md-2">
+            <div class="col-12 col-md-6 order-md-2 text-column">
               <div class="text-wrapper">
                 <div>
                   <div class="contact">
@@ -85,7 +85,7 @@
       <div class="slide">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-12 col-md-6 order-md-2">
+            <div class="col-12 col-md-6 order-md-2 text-column">
               <div class="text-wrapper">
                 <div>
                   <div class="contact">
@@ -111,7 +111,7 @@
       <div class="slide">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-12 col-md-6 order-md-2">
+            <div class="col-12 col-md-6 order-md-2 text-column">
               <div class="text-wrapper">
                 <div>
                   <div class="contact">
@@ -139,7 +139,7 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-12 col-md-6 img-col-bg"><img src="../tszlogo.png" class="logo" alt="Z Logo" /></div>
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-md-6 text-column">
             <div class="text-wrapper">
               <h1>Studios</h1>
               <p>Seit 30 Jahren erarbeiten wir hochwertige Tonprodukte für sämtliche Medien. Damit Sie bei uns die erste Geige spielen können, unterstützen wir Sie bei Ihrem Projekt mit unserer langjährigen Erfahrung, hoher Qualität und einer erstklassigen Dienstleistungspalette.</p>
@@ -209,15 +209,12 @@
     // });
 
     (function($) {  
-      $('.team-intro-gray h1').addClass('animate__animated animate__fadeInLeftBig');
-      $('.team-intro-gray .logo').addClass('animate_infinite');
-
       'use strict';
 
       // initialize fullPage
       $('#fullpage').fullpage({        
-        anchors:['teamintro', 'teamintro2', 'teammembers', 'studiointro', 'studioa', 'studioautro'],
-        navigationTooltips: ['Team Intro', 'Team Intro Rot', 'Team Members', 'Studio Intro', 'Studio A', 'Studio Outro'],
+        anchors:['teamintro', 'teammembers', 'studiointro', 'studioa', 'studioautro'],
+        navigationTooltips: ['Team Intro', 'Team Members', 'Studio Intro', 'Studio A', 'Studio Outro'],
         // Navigation
         menu: '#menu',
         css3: true,
@@ -229,20 +226,24 @@
         slidesNavPosition: 'bottom',
         scrollHorizontally: true,
         dragAndMove: false,
+        controlArrows: false,
         //dragAndMoveKey: 'YWx2YXJvdHJpZ28uY29tX0EyMlpISmhaMEZ1WkUxdmRtVT0wWUc=',
 
         onLeave: function(index, nextIndex, direction) {
-          if( index.index == 0 && nextIndex.index == 1) { 
+          //if( index.index == 0 && nextIndex.index == 0) { 
+          if(nextIndex.index == 0) { 
             // team intro red
             $('.team-intro-red h1').addClass('animate__animated animate__fadeInLeftBig');
             $('.team-intro-red .logo').addClass('animate_infinite');
-          } else if(( index.index == 0 || index.index == 1) && nextIndex.index == 2) {
+          //} else if(( index.index == 0 || index.index == 1) && nextIndex.index == 1) {
+          } else if(nextIndex.index == 1) {
             // team members
             $('.team-members h1').addClass('animate__animated animate__fadeInLeftBig');
             $('.team-members .text-wrapper .text').addClass('animate__animated animate__fadeInUpBig').css('animation-delay', '.3s'); 
             $('.team-members .img-left').addClass('animate__animated animate__fadeIn').css('animation-delay', '.3s');
             $('.team-members .qr-code-wrapper').addClass('animate__animated animate__fadeIn').css('animation-delay', '1.0s');
-          } else if(( index.index == 0 || index.index == 1 || index.index == 2) && nextIndex.index == 3) {
+          //} else if(( index.index == 0 || index.index == 1 || index.index == 2) && nextIndex.index == 3) {
+          } else if( nextIndex.index == 2) {
             // studio intro
             $('.studio-intro h1').addClass('animate__animated animate__fadeInLeftBig');
             $('.studio-intro .logo').addClass('animate_infinite');
@@ -251,6 +252,11 @@
       });
       
     })(jQuery);
+
+    function moveRight() {
+      //l(this, "left") ? fullpage_api.moveSlideLeft() : fullpage_api.moveSlideRight()
+      
+    }
 
   </script>
 </body>
