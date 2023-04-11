@@ -45,6 +45,9 @@ body {
   animation-iteration-count: infinite;
 }
 
+body {
+  /* margin-top: 56px; */
+}
 .section {
   padding-top: 56px;
 }
@@ -103,8 +106,42 @@ body {
   align-items: center;
 }
 
+.navbar-red {
+  background-color: #f25a59 !important;
+}
+.navbar-red .navbar-toggler {
+  border: none;
+}
+.navbar-red .navbar-brand {
+  color: #fff;
+  margin-left: 0.5rem;
+}
+.navbar-red .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-red .navbar-nav .nav-link {
+  color: rgba(255,255,255,.55);
+}
+.navbar-red .navbar-nav .nav-link.active, .navbar-red .navbar-nav .show>.nav-link {
+  color: #fff;
+}
+.navbar-red .navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar-red .nav-item {
+  padding-left: 1rem;
+}
 .navbar-brand .logo-z {
   color: #902e38;
+}
+.navbar-red .navbar-brand img {
+  width: 130px;
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    margin-left: 1rem;
+  }
 }
 
 /* team intro */
@@ -141,15 +178,14 @@ body {
 .team-intro-red {
   background-color: #f25a59;
 }
-.team-intro-red h1 {
-  -webkit-text-stroke: 2px #eee;
-  text-stroke: 2px #eee;
-}
 .team-intro-red .text-wrapper {
   color: #eee;
 }
 
 @media (max-width: 768px) {
+  .team-intro .text-wrapper {
+    padding: 1rem 3rem 1rem 1rem;
+  }
   .team-intro .img-col-bg .logo {
     top: -40px;
     left: 50%;
@@ -158,6 +194,9 @@ body {
   .team-intro .img-col-bg {
     min-height: 40vh;
     min-height: 40svh;
+  }
+  .team-intro h1 {
+    font-size: 2.5rem;
   }
 }
 
@@ -233,8 +272,11 @@ body {
     margin-left: 1rem;
     margin-right: 2rem;
   }
+  .team-members .text-wrapper h1 {
+    font-size: 2rem;
+  }
   .team-members .img-col .logo.right {
-    right: 10%;
+    left: 10%;
     top: -3rem;
   }
 }
@@ -269,9 +311,15 @@ body {
 }
 
 @media (max-width: 768px) {
+  .studio-intro .text-wrapper {
+    padding: 1rem 3rem 1rem 1rem;
+  }
   .studio-intro .img-col-bg {
     min-height: 40vh;
     min-height: 40svh;
+  }
+  .studio-intro h1 {
+    font-size: 2.5rem;
   }
 }
 
@@ -319,10 +367,17 @@ body {
 
 @media (max-width: 768px) {
   .studioa .text {
-    padding-top: 8rem;
+    padding-top: 7rem;
     padding-left: 1rem;
     padding-right: 3rem;
     max-width: 100%;
+  }
+  .studioa h1 {
+    font-size: 2rem;
+  }
+  .studioa .logo {
+    position: absolute;
+    top: 1rem;
   }
 }
 
@@ -357,6 +412,9 @@ body {
 }
 
 @media (max-width: 768px) {
+  .studio-outro .text-wrapper {
+    padding: 1rem 3rem 1rem 1rem;
+  }
   .studio-outro .img-col-bg {
     min-height: 40vh;
     min-height: 40svh;
@@ -365,5 +423,8 @@ body {
     top: -40px;
     right: 50%;
     right: calc(50% - 40px);
+  }
+  .studio-outro h1 {
+    font-size: 2.5rem;
   }
 }

@@ -12,9 +12,10 @@
 </head>
 <body>
 
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-red bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Tonstudios <span class="logo-z">Z</span></a>
+      <!-- <a class="navbar-brand" href="#">tonstudios<span class="logo-z">z</span></a> -->
+      <a class="navbar-brand" href="#"><img src="tsz-logo-s.png" /></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -76,20 +77,9 @@
                     <p class="text">Schon als Kind war Renzo fasziniert von
                       Klängen, Tönen, Tasten und Knöpfen. Als
                       Jugendlicher komponierte er auf seinen
-                      Synthesizern anstaN Musik seine eigenen
+                      Synthesizern anstatt Musik seine eigenen
                       Soundwelten und bastelte an Frequenzen und
-                      Schwingungen. Nach einer soliden Ausbildung
-                      im Bereich WirtschaUFinanzen zog es ihn
-                      definiWv in die Welt der Töne. Seit nunmehr drei
-                      Jahrzehnten leitet Renzo erfolgreich die
-                      Tonstudios Z AG.Renzos Stärke ist die
-                      FunkWonalität des Klanges. «Beim Kochen ist
-                      das richWge Dosieren von auserlesenen Zutaten
-                      und das Timing der Schüssel für ein perfektes
-                      Gericht. Genau so sind perfekt abgesWmmte
-                      Klänge, Geräusche und SWmmen zum richWgen
-                      Zeitpunkt das Geheimnis für eine effekWve
-                      Wirkung des Klanges.»</p>
+                      Schwingungen.</p>
                   </div>
                 </div>
               </div>
@@ -115,7 +105,7 @@
                   <div class="contact">
                     <h1>Tom Wenger</h1>
                     <p class="position">Technischer Leiter & Sound Engineer</p>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
                   </div>
                 </div>
               </div>
@@ -141,7 +131,7 @@
                   <div class="contact">
                     <h1>Laura Herold</h1>
                     <p class="position">Officemanagerin & Produktionsplanung</p>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
                   </div>
                 </div>
               </div>
@@ -191,7 +181,7 @@
         <div class="row">
           <div class="col-12 col-md-6">
             <div class="text-wrapper">
-              <h1>3&nbsp;Ge<shy />nerationen</h1>
+              <h1>3&nbsp;Genera&shy;tionen</h1>
               <p>Seit 30 Jahren erarbeiten wir hochwertige Tonprodukte für sämtliche Medien. Damit Sie bei uns die erste Geige spielen können, unterstützen wir Sie bei Ihrem Projekt mit unserer langjährigen Erfahrung, hoher Qualität und einer erstklassigen Dienstleistungspalette.</p>
             </div>
           </div>
@@ -233,7 +223,6 @@
         anchors:['teamintro', 'teammembers', 'studiointro', 'studioa', 'studioautro'],
         navigationTooltips: ['Team Intro', 'Team Members', 'Studio Intro', 'Studio A', 'Studio Outro'],
         // Navigation
-        menu: '#menu',
         css3: true,
         lockAnchors: false,
         navigation: true,
@@ -244,6 +233,10 @@
         scrollHorizontally: true,
         dragAndMove: false,
         controlArrows: false,
+        continuousHorizontal: false,
+        autoScrolling: true,
+        scrollBar: false,
+        fitToSection: true,
         //dragAndMoveKey: 'YWx2YXJvdHJpZ28uY29tX0EyMlpISmhaMEZ1WkUxdmRtVT0wWUc=',
 
         onLeave: function(index, nextIndex, direction) {
