@@ -39,33 +39,15 @@ body {
   font-family: 'Metropolis', sans-serif;
 }
 
-
-
 .animate_infinite {
   animation: pulse; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 2s; /* don't forget to set a duration! */
   animation-iteration-count: infinite;
 }
 
-.topmenu {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 70;
-  -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-  letter-spacing: 1px;
-  font-size: 1.1em;
+.section {
+  padding-top: 56px;
 }
-.topmenu li {
-  display: inline-block;
-  margin: 10px 0;
-}
-.topmenu a {
-  color: #fff;
-  padding: 0 1.1em 1.1em;
-}
-
 .fp-overflow {
   height: 100%;
 }
@@ -104,6 +86,14 @@ body {
 .my-arrow.right {
   right: 35px;
 }
+@media (max-width: 768px) {
+  .my-arrow.left {
+    display: none;
+  }
+  .my-arrow.right {
+    display: none;
+  }
+}
 
 
 .team-intro .text-column,
@@ -111,6 +101,10 @@ body {
 .studio-intro .text-column {
   display: flex;
   align-items: center;
+}
+
+.navbar-brand .logo-z {
+  color: #902e38;
 }
 
 /* team intro */
@@ -155,6 +149,17 @@ body {
   color: #eee;
 }
 
+@media (max-width: 768px) {
+  .team-intro .img-col-bg .logo {
+    top: -40px;
+    left: 50%;
+    left:  calc(50% - 40px);
+  }
+  .team-intro .img-col-bg {
+    min-height: 40vh;
+    min-height: 40svh;
+  }
+}
 
 /* team members */
 /* ------------------------------------------------------------------------- */
@@ -222,6 +227,17 @@ body {
   right: -30px;
 }
 
+@media (max-width: 768px) {
+  .team-members .text-wrapper {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 2rem;
+  }
+  .team-members .img-col .logo.right {
+    right: 10%;
+    top: -3rem;
+  }
+}
 
 /* studio intro */
 /* ------------------------------------------------------------------------- */
@@ -250,6 +266,13 @@ body {
   right: 50%;
   right: calc(50% - 40px);
   z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .studio-intro .img-col-bg {
+    min-height: 40vh;
+    min-height: 40svh;
+  }
 }
 
 /* studios */
@@ -294,6 +317,15 @@ body {
   text-shadow: 1px 1px 1px rgb(0 0 0 / 50%);
 }
 
+@media (max-width: 768px) {
+  .studioa .text {
+    padding-top: 8rem;
+    padding-left: 1rem;
+    padding-right: 3rem;
+    max-width: 100%;
+  }
+}
+
 /* studio outro */
 /* ------------------------------------------------------------------------- */
 .studio-outro {
@@ -301,6 +333,7 @@ body {
 }
 .studio-outro h1 {
   font-size: 3.5rem;
+  hyphens: auto;
 }
 .studio-outro .text-wrapper {
   padding: 6rem 3rem 3rem 3rem;
@@ -321,4 +354,16 @@ body {
   right: 50%;
   right: calc(50% - 40px);
   z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .studio-outro .img-col-bg {
+    min-height: 40vh;
+    min-height: 40svh;
+  }
+  .studio-outro .img-col-bg .logo {
+    top: -40px;
+    right: 50%;
+    right: calc(50% - 40px);
+  }
 }

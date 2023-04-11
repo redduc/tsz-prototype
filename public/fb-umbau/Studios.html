@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="de" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,6 +12,33 @@
 </head>
 <body>
 
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Tonstudios <span class="logo-z">Z</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <!-- <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="#">Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
   <div id="fullpage">
     <div class="section team-intro team-intro-red">
       <div class="container-fluid">
@@ -27,19 +54,16 @@
       </div>
     </div>
     <div class="section team-members">
-      
       <button class="my-arrow left" onclick="fullpage_api.moveSlideLeft()">
         <svg width="60px" height="80px" viewBox="0 0 50 80" xml:space="preserve">
-            <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="
-                45.63,75.8 0.375,38.087 45.63,0.375 ">
-        </polyline></svg>
-    </button>
-    <button class="my-arrow right" onclick="fullpage_api.moveSlideRight()">
+          <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="45.63,75.8 0.375,38.087 45.63,0.375 "></polyline>
+        </svg>
+      </button>
+      <button class="my-arrow right" onclick="fullpage_api.moveSlideRight()">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60px" height="80px" viewBox="0 0 50 80" xml:space="preserve">
-            <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="
-                0.375,0.375 45.63,38.087 0.375,75.8 ">
-        </polyline></svg>
-    </button>
+            <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="0.375,0.375 45.63,38.087 0.375,75.8 "></polyline>
+        </svg>
+      </button>
       <div class="slide active">
         <div class="container-fluid">
           <div class="row">
@@ -167,7 +191,7 @@
         <div class="row">
           <div class="col-12 col-md-6">
             <div class="text-wrapper">
-              <h1>3 Generationen</h1>
+              <h1>3&nbsp;Ge<shy />nerationen</h1>
               <p>Seit 30 Jahren erarbeiten wir hochwertige Tonprodukte für sämtliche Medien. Damit Sie bei uns die erste Geige spielen können, unterstützen wir Sie bei Ihrem Projekt mit unserer langjährigen Erfahrung, hoher Qualität und einer erstklassigen Dienstleistungspalette.</p>
             </div>
           </div>
@@ -178,15 +202,8 @@
   </div>
 
 
-  <ul id="menu" class="topmenu">
-    <li class="menu-active"><a href="#" rel="noopener">Service</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Project</a></li>
-    <li><a href="#">Contact</a></li>
-  </ul>
 
-
-
+  <script type="text/javascript" src="./bootstrap.min.js"></script>
   <script type="text/javascript" src="./jquery.min.js"></script>
   <script type="text/javascript" src="./fullpage.extensions.min.js"></script>
   <script type="text/javascript" src="./fullpage.dragAndMove2.limited.min.js"></script>
