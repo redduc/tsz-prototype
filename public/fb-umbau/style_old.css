@@ -39,29 +39,26 @@ body {
   font-family: 'Metropolis', sans-serif;
 }
 
-.animate_infinite_pulse {
+.animate_infinite {
   animation: pulse; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 2s; /* don't forget to set a duration! */
   animation-iteration-count: infinite;
 }
 
 body {
-  margin-top: 56px;
+  /* margin-top: 56px; */
 }
 .section {
-  position: relative;
-  min-height: 100vh;
-  min-height: 100svh;
+  padding-top: 56px;
 }
-.section > .container-fluid {
+.fp-overflow {
   height: 100%;
-  min-height: 100vh;
-  min-height: 100svh;
 }
-.section > .container-fluid > .row {
+.fp-overflow > .container-fluid {
   height: 100%;
-  min-height: 100vh;
-  min-height: 100svh;
+}
+.fp-overflow > .container-fluid > .row {
+  height: 100%;  
 }
 
 #fp-nav ul li a span, #menu-line, .fp-slidesNav ul li a span {
@@ -70,6 +67,35 @@ body {
 .fp-slidesNav.fp-bottom {
   text-align: center;
   bottom: 0.6rem;
+}
+
+
+.my-arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -45px;
+  width: 70px;
+  height: 90px;
+  z-index: 99;
+  -webkit-appearance: none;
+  background: 0 0;
+  border: 0;
+  outline: 0;
+}
+.my-arrow.left {
+  left: 35px;
+}
+.my-arrow.right {
+  right: 35px;
+}
+@media (max-width: 768px) {
+  .my-arrow.left {
+    display: none;
+  }
+  .my-arrow.right {
+    display: none;
+  }
 }
 
 
@@ -178,29 +204,6 @@ body {
 /* ------------------------------------------------------------------------- */
 .team-members {
   background-color: #000;
-  min-height: 90vh;
-  min-height: 90svh;
-}
-.team-members .carousel,
-.team-members .carousel-inner,
-.team-members .carousel-item,
-.team-members .carousel-item > .container-fluid,
-.team-members .carousel-item > .container-fluid .row {
-  min-height: 90vh;
-  min-height: 90svh;
-}
-.team-members .carousel-control-next,
-.team-members .carousel-control-prev {
-  width: 7%;
-}
-.team-members .carousel-control-next,
-.team-members .carousel-control-prev {
-  width: 7%;
-}
-.team-members .carousel-control-next .carousel-control-next-icon,
-.team-members .carousel-control-prev .carousel-control-prev-icon {
-  width: 5rem;
-  height: 5rem;
 }
 .team-members .text-wrapper {  
   position: relative;
@@ -349,8 +352,6 @@ body {
 /* studio a */
 .studioa {
   background-image: url('../about/studioa.jpg');
-  min-height: 100vh;
-  min-height: 100svh;
 }
 .studioa .text {
   padding-top: 7rem;
