@@ -34,9 +34,36 @@
   font-style: normal;
 }
 
+/*
+ Colors
+ -------
+
+ grey: #424242
+ red (tsz): #f25a59
+*/
+
+/*
+ Animations
+ -------
+*/
+@keyframes move-background {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+
+
 /* Verwendung der Schriftart */
 body {
   font-family: 'Metropolis', sans-serif;
+  letter-spacing: 0.2px;
 }
 
 .animate_infinite_pulse {
@@ -82,6 +109,7 @@ body {
 
 .navbar-red {
   background-color: #f25a59 !important;
+  /* background-color: #424242 !important; */
 }
 .navbar-red .navbar-toggler {
   border: none;
@@ -129,6 +157,7 @@ body {
 .team-intro .text-wrapper {
   padding: 6rem 3rem 3rem 3rem;
   color: #ccc;
+  font-size: 1.2em;
 }
 .team-intro .img-col-bg {
   position: relative;
@@ -151,6 +180,7 @@ body {
 }
 .team-intro-red {
   background-color: #f25a59;
+  /* background-color: #424242; */
 }
 .team-intro-red .text-wrapper {
   color: #eee;
@@ -158,7 +188,7 @@ body {
 
 @media (max-width: 768px) {
   .team-intro .text-wrapper {
-    padding: 1rem 3rem 1rem 1rem;
+    padding: 1rem 3rem 3rem 1rem;
   }
   .team-intro .img-col-bg .logo {
     top: -40px;
@@ -245,7 +275,7 @@ body {
   z-index: 5;
 }
 .team-members .qr-code-wrapper img {
-  width: 100px;
+  width: 90px;
 }
 .team-members .img-col {
   position: relative;
@@ -257,6 +287,9 @@ body {
   height: 80px;
   left: -30px;
   z-index: 1;
+  display: none;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 50%;
 }
 .team-members .img-col .logo.right {
   left: auto;
@@ -265,7 +298,7 @@ body {
 
 @media (max-width: 768px) {
   .team-members .text-wrapper {
-    margin-top: 1rem;
+    margin-top: 2rem;
     margin-left: 1rem;
     margin-right: 2rem;
   }
@@ -275,6 +308,12 @@ body {
   .team-members .img-col .logo.right {
     left: 10%;
     top: -3rem;
+  }
+  .team-members .img-left {
+    width: 130%;
+  }
+  .team-members .qr-code-wrapper img {
+    width: 60px;
   }
 }
 
@@ -299,12 +338,13 @@ body {
 }
 .studio-intro .img-col-bg .logo {
   position: absolute;
-  top: 1.5rem;
+  top: 10%;
+  right: -40px;
   width: 80px;
   height: 80px;
-  right: 50%;
-  right: calc(50% - 40px);
   z-index: 1;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 50%;
 }
 
 @media (max-width: 768px) {
@@ -318,6 +358,12 @@ body {
   .studio-intro h1 {
     font-size: 2.5rem;
   }
+  .studio-intro .img-col-bg .logo {
+    top: auto;
+    left: 50%;
+    left: calc(50% - 40px);
+    bottom: -40px;
+  }
 }
 
 /* studios */
@@ -325,7 +371,7 @@ body {
 .fp-overflow > .studios {
   height: 100%;  
 }
-.studios {
+.studios .image {
   position: relative;
   background-size: cover;
   background-position: center center;
@@ -333,50 +379,50 @@ body {
 }
 .studios .logo {
   position: absolute;
-  top: 1.5rem;
+  bottom: -40px;
   width: 80px;
   height: 80px;
   right: 50%;
   right: calc(50% - 40px);
   z-index: 1;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 50%;
 }
 
-.studios .text {
-  font-size: 1.2em;
-  color: #eee;
+.studios .text-wrapper {
+  color: #ccc;
 }
 
 /* studio a */
-.studioa {
+.studioa .image {
   background-image: url('../about/studioa.jpg');
   min-height: 100vh;
   min-height: 100svh;
+  animation: move-background 50s infinite linear;
 }
-.studioa .text {
-  padding-top: 7rem;
-  padding-left: 4rem;
-  max-width: 35%;
+.studioa .text-wrapper {
+  padding: 4rem 4rem 4rem 4rem;
+  background-color: #424242;
+  border-bottom: 1px solid #2a2a2a;
+}
+.studioa .text-wrapper p:last-child {
+  margin-bottom: 0;
 }
 .studioa h1 {
   font-size: 3.5rem;
 }
-.studioa .text p {
+/* .studioa .text p {
   text-shadow: 1px 1px 1px rgb(0 0 0 / 50%);
-}
+} */
 
 @media (max-width: 768px) {
-  .studioa .text {
-    padding-top: 7rem;
+  .studioa .text-wrapper {
     padding-left: 1rem;
     padding-right: 3rem;
-    max-width: 100%;
+    padding-bottom: 2rem;
   }
   .studioa h1 {
     font-size: 2rem;
-  }
-  .studioa .logo {
-    position: absolute;
-    top: 1rem;
   }
 }
 
@@ -399,20 +445,23 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url('../about/studioentrance.jpg');
+  animation: move-background 40s infinite linear;
 }
+
 .studio-outro .img-col-bg .logo {
   position: absolute;
-  top: 1.5rem;
+  top: 10%;
+  left: -40px;
   width: 80px;
   height: 80px;
-  right: 50%;
-  right: calc(50% - 40px);
   z-index: 1;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 50%;
 }
 
 @media (max-width: 768px) {
   .studio-outro .text-wrapper {
-    padding: 1rem 3rem 1rem 1rem;
+    padding: 2rem 2.5rem 1rem 0.3rem;
   }
   .studio-outro .img-col-bg {
     min-height: 40vh;
@@ -420,8 +469,8 @@ body {
   }
   .studio-outro .img-col-bg .logo {
     top: -40px;
-    right: 50%;
-    right: calc(50% - 40px);
+    left: 50%;
+    left: calc(50% - 40px);
   }
   .studio-outro h1 {
     font-size: 2.5rem;
