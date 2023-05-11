@@ -45,8 +45,8 @@
         <div class="row">
           <div class="col-12 col-md-6 text-column">
             <div class="text-wrapper">
-              <h1 class="animate" data-animation="animate__fadeIn" data-delay="100">Team</h1>
-              <p class="animate" data-animation="animate__pulse" data-delay="300">Seit 30 Jahren erarbeiten wir hochwertige Tonprodukte für sämtliche Medien. Damit Sie bei uns die erste Geige spielen können, unterstützen wir Sie bei Ihrem Projekt mit unserer langjährigen Erfahrung, hoher Qualität und einer erstklassigen Dienstleistungspalette.</p>
+              <h1 class="animate hidden" data-animation="animate__fadeIn" data-delay="100">Team</h1>
+              <p class="animate" data-animation="animate__pulse" data-delay="300">Seit 30 Jahren erarbeiten wir hochwertige Tonprodukte für sämtliche Medien. Damit Sie bei uns die erste Geige spielen können, unterstützen wir Sie bei Ihrem Projekt mit unserer langjährigen Erfahrung, hoher Qualität und einer erstklassigen Dienstleistungspalette.</p>              
             </div>
           </div>
           <div class="col-12 col-md-6 img-col-bg"><img src="../tszlogo.png" class="logo animate_infinite_pulse" alt="Z Logo" /></div>
@@ -157,8 +157,10 @@
           <div class="col-12 col-md-6 img-col-bg"><img src="../tszlogo.png" class="logo animate_infinite_pulse" alt="Z Logo" /></div>
           <div class="col-12 col-md-6 text-column">
             <div class="text-wrapper">
-              <h1 class="animate" data-animation="animate__fadeIn" data-delay="100">Studios</h1>
-              <p class="animate" data-animation="animate__pulse" data-delay="300">Seit 30 Jahren erarbeiten wir hochwertige Tonprodukte für sämtliche Medien. Damit Sie bei uns die erste Geige spielen können, unterstützen wir Sie bei Ihrem Projekt mit unserer langjährigen Erfahrung, hoher Qualität und einer erstklassigen Dienstleistungspalette.</p>
+              <!-- <h1 class="animate" data-animation="animate__fadeIn" data-delay="100">Studios</h1>                
+              <p class="animate" data-animation="animate__pulse" data-delay="300">Seit 30 Jahren erarbeiten wir hochwertige Tonprodukte für sämtliche Medien. Damit Sie bei uns die erste Geige spielen können, unterstützen wir Sie bei Ihrem Projekt mit unserer langjährigen Erfahrung, hoher Qualität und einer erstklassigen Dienstleistungspalette.</p> -->
+              <h1 class="animeo opzero" data-animation="OpacityShow" data-delay="100" data-duration="2000">Studios</h1>
+              <p class="animeo" data-animation="Pulse" data-delay="300" data-duration="1000">Seit 30 Jahren erarbeiten wir hochwertige Tonprodukte für sämtliche Medien. Damit Sie bei uns die erste Geige spielen können, unterstützen wir Sie bei Ihrem Projekt mit unserer langjährigen Erfahrung, hoher Qualität und einer erstklassigen Dienstleistungspalette.</p>
             </div>
           </div>          
         </div>
@@ -198,7 +200,9 @@
 
 
   <script type="text/javascript" src="./bootstrap.min.js"></script>
-  <script type="text/javascript" src="./jquery.min.js"></script>  
+  <script type="text/javascript" src="./jquery.min.js"></script>
+  <script type="text/javascript" src="./anime.min.js"></script>
+  <script type="text/javascript" src="./animecustomcode.js"></script>  
   <script type="text/javascript">
     (function($) {  
       'use strict';      
@@ -246,7 +250,6 @@
       animatedElements.forEach(element => {
         observer.observe(element);
       });
-
     }
 
   </script>

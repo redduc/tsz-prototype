@@ -146,6 +146,16 @@ body {
   }
 }
 
+.hidden {
+  visibility: hidden;
+}
+.animate__animated.hidden {
+  visibility: visible;
+}
+.opzero {
+  opacity: 0;
+}
+
 /* team intro */
 /* ------------------------------------------------------------------------- */
 .team-intro {
