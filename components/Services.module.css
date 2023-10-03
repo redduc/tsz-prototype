@@ -1,6 +1,6 @@
 .wrapper {
     padding-top: 2rem;
-    padding-bottom: 10rem;
+    padding-bottom: 3rem;
 
     background-image: url('/services/services-background.jpg');
     background-position: 0 0;
@@ -50,15 +50,29 @@
     }
 }
 
-.wrapper h1 + p {
+.commonText {
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+.commonText h1{
+    color: #000;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.commonText p {
+    color: #000;
+    text-align: center;
+}
+
+/* .wrapper h1 + p {
     margin-top: 4em;
     margin-bottom: 3em;
-}
-.wrapper h2 {
+} */
+/* .wrapper h2 {
     margin-top: 3em;
     margin-bottom: 1em;
     text-align: center;
-}
+} */
 
 .cardCol {
     padding-top: 1.5rem;

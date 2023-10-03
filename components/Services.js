@@ -131,9 +131,14 @@ export default function Services() {
           <Col xs={0} lg={1} xxl={2}></Col>
         </Row> */}
         <Row>
-          <Col xs={12}>
-            <h2>Als Full Service-Unternehme bieten wir sämtliche Leistungen rund um Audioproduktion.</h2>
+          <Col xs={0} lg={1} xxl={2}></Col>
+          <Col xs={12} lg={10} xxl={8}>
+            <div className={styles.commonText}>
+            <h1>Full Service</h1>
+            <p>Als Full Service-Unternehmen bieten wir sämtliche Leistungen rund um Audioproduktion.</p>
+            </div>
           </Col>
+          <Col xs={0} lg={1} xxl={2}></Col>
         </Row>
         <Row>
           { services.map(service =>

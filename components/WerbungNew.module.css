@@ -1,0 +1,87 @@
+.commonText {
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+.commonText h1{
+  color: #000;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.commonText p {
+  color: #000;
+  text-align: center;
+}
+
+.advertisementsContainer {
+  padding-left: 0;
+  padding-right: 0;
+}
+.advertisements .advertisementColumn {
+  position: relative;
+}
+.advertisements .advertisementWrapper {
+  width: 100%;
+  padding-top: 56.25%;
+  position: relative;  
+}
+.advertisements .advertisementWrapper .advertisement {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;  
+}
+.advertisements .advertisementColumn .advertisement {
+  border-bottom: 1px solid #FFF;
+}
+.advertisement img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+.advertisements .textWrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: grid;
+  place-items: center;  
+}
+.advertisements .textWrapper p {
+  text-transform: uppercase;
+  font-weight: 600;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+.advertisement .vlinkWrapper {
+  position: absolute;
+  right: 0;
+  bottom: 1em;
+  left: 1em;
+}
+.advertisement .vlinkWrapper a {
+  color: #FFF;
+  margin-right: 1em;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+.advertisement .vlinkWrapper a:last-child {
+  margin-right: 0;
+}
+
+.advertisements .advertisement img {
+  width: 100%;
+}
+
+@media (min-width: 992px) {  
+  .advertisements .bigAdvertWrapper {
+    padding-top: 40%;
+  }
+  .advertisements .bigAdvertWrapper .textWrapper p {
+    font-size: 2em;
+  }
+  .advertisements .advertisementColumn:nth-child(3n + 2) .advertisement {
+    border-left: 1px solid #FFF;
+    border-right: 1px solid #FFF;
+  }
+}

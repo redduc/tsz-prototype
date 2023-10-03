@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import React from "react";
 import TSZNavigation from '../components/Navigation';
-import StudioAbout from "../components/StudioAbout";
+import WerbungNew from "../components/WerbungNew";
 import ContactUs from '../components/ContactUs';
 
 export default function Studios() {
@@ -14,7 +14,7 @@ export default function Studios() {
         <title>TSZ examples</title>
       </Head>
       <TSZNavigation addReveal={false} />
-      <StudioAbout />
+      <WerbungNew />
       <ContactUs />
     </>
   )

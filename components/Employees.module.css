@@ -1,67 +1,71 @@
-.wrapper {
-  padding-top: 2rem;
-  padding-bottom: 10rem;
-
-  /* background-image: url('/services/services-background.jpg'); */
-  background: rgb(9,9,121);
-  background: linear-gradient(180deg, rgba(9,9,121,1) 0%, rgba(0,0,0,1) 55%);
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-color: black;
+.commonText {
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+.commonText h1{
+  color: #000;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.commonText p {
+  color: #000;
+  text-align: center;
 }
 
-.wrapper h1 {
-  margin-bottom: 5rem;
+.employeesContainer {
+  padding-left: 0;
+  padding-right: 0;
 }
-
-.employees {
-  margin-top: 4rem;
-}
-.employees .employee {
-  display: none;
+.employees .employeeColumn {
   position: relative;
 }
-.employees .employee.active {
-  display: block;
+.employees .employeeWrapper {
+  width: 100%;
+  padding-top: 120%; /* 1:1 Aspect Ratio */
+  position: relative; /* If you want text inside of it */
+  
 }
-.employees .select {  
+.employees .employeeWrapper .employee {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;  
+}
+.employee img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+.employees .text {  
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  display: flex;
-  flex-wrap: wrap;
-  background: rgb(0,0,0);
-  background: linear-gradient(0deg, rgba(0,0,0,1) 10%, rgba(0,0,0,0) 100%);
-  padding-top: 1.5rem;
-}
-.employees .select a {
-  flex: 1 1 0;
-  align-self: flex-end;
-  display: block;
-  margin-bottom: 0;
-  padding-bottom: 0.5rem;
-  padding-left: 0.7rem;
-  padding-right: 0.7rem;
+  padding-left: 1.5em;
+  padding-bottom: 1em;
   color: #FFF;
-  border-bottom: 0.4rem solid transparent;
 }
-.employees .select a span {
+.employees .text span {
   display: block;
 }
-.employees .select a .name {
+.employees .text .name {
   font-weight: 700;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.1em;
 }
-.employees .select a .role {
-  font-size: 0.7em;
+.employees .text .role {
+  font-size: 0.8em;
   height: 2.1rem;
-}
-.employees .employee a:hover,
-.employees .employee a.active {
-  border-bottom: 0.4rem solid #f15f60;
 }
 .employees .employee img {
   width: 100%;
+}
+
+
+@media (min-width: 992px) {
+  .employees .employeeColumn:nth-child(2) .employee {
+    border-left: 1px solid #FFF;
+    border-right: 1px solid #FFF;
+  }
 }

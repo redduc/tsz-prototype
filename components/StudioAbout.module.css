@@ -1,60 +1,26 @@
-.studioIntroText > div {
-  min-height: 100vh;
-  min-height: 100svh;
+.commonText {
+  padding-top: 4em;
+  padding-bottom: 4em;
 }
-.menuItems {
-  font-weight: 700;
-  font-size: 1.5rem;
-}
-
-.textWrapper {
-  margin: 3rem;
-}
-.textWrapper h1 {
-  text-transform: uppercase;
-  margin-top: 4rem;
-  margin-bottom: 2rem;
-  color: #f25a59;
-}
-.textWrapper p {
-  font-size: 1.5rem;
+.commonText h1{
   color: #000;
+  margin-bottom: 2rem;
+  text-align: center;
 }
-.imgColBg {
-  position: relative;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.imgColBg .logo {
-  position: absolute;
-  top: 30%;
-  width: 80px;
-  height: 80px;
-  right: -40px;
-  z-index: 1;
-}
-.imageWrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden
-}
-.imgLeft {
-  flex-shrink: 0;
-  min-width: 100%;
-  min-height: 100%
+.commonText p {
+  color: #000;
+  text-align: center;
 }
 
-.studios {
+.studioa {
   position: relative;
-  min-height: 100vh;
-  min-height: 100svh;
+  min-height: 80vh;
+  min-height: 80svh;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
-.studios .logo {
+.studioa .logo {
   position: absolute;
   top: 1.5rem;
   width: 80px;
@@ -63,37 +29,121 @@
   right: calc(50% - 40px);
   z-index: 1;
 }
-
-.studios .text {
-  font-size: 1.2em;
-}
-
 .studioa .text {
-  padding-top: 3rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding-bottom: 2rem;
   padding-left: 2rem;
-  max-width: 30%;
+  font-size: 1.2em;
 }
 .studioa .text p {
   text-shadow: 1px 1px 1px rgb(0 0 0 / 50%);
 }
 
-@media (max-width: 768px) {  
-  .imgColBg {
-    height: 60svh;
-  }
-  .menuItems {
-    font-size: 1.2rem;
-  }
+
+
+
+
+
+
+.studiosContainer {
+  padding-left: 0;
+  padding-right: 0;
+}
+.studios .studioColumn {
+  position: relative;
+}
+.studios .studioWrapper {
+  width: 100%;
+  padding-top: 70%; /* 1:1 Aspect Ratio */
+  position: relative; /* If you want text inside of it */
+  
+}
+.studios .studioWrapper .studio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;  
+}
+.studio img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+.studios .text {  
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  padding-bottom: 1em;
+  color: #FFF;
+}
+.studios .text span {
+  display: inline-block;
+}
+.studios .studio img {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
   .studioa .text {
-    max-width: 100%;
-    padding-top: 120px;
-    padding-top: calc(3rem + 80px);
+    max-width: 70%;
   }
-  .imgColBg .logo {
-    top: -40px;
-    right: 50%;
-    right: calc(50% - 40px);
+}
+@media (min-width: 992px) {
+  .studioa .text {
+    max-width: 50%;
   }
+  .studios .text {
+    max-width: 80%;
+  }
+}
+@media (min-width: 1200px) {
+  .studioa .text {
+    max-width: 40%;
+  }
+  .studios .text {
+    max-width: 60%;
+  }
+}
+@media (min-width: 1400px) {
+  .studioa .text {
+    max-width: 30%;
+  }
+/*   
+  .studios .text {
+    max-width: 60%;
+  } */
+}
+
+
+@media (min-width: 992px) {
+  .studios .studioColumn:first-child .studio {
+    border-right: 1px solid #FFF;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {  
 }
 
 .studioentrance .text {

@@ -1,13 +1,14 @@
 import Head from 'next/head'
-import React from "react";
+import React, {useEffect, useState} from "react";
 import EntryView from "../components/EntryView";
 import Services from "../components/Services";
-import Productions from "../components/Productions";
-import Studios from "../components/Studios";
-import Technology from "../components/Technology";
-import Employees from "../components/Employees";
+import ContactUs from '../components/ContactUs';
 
 export default function Home() {
+  useEffect(() => {
+    document.body.className = 'no-padding-top';
+  });
+
   return (
     <>
       <Head>
@@ -17,10 +18,7 @@ export default function Home() {
       </Head>
       <EntryView />
       <Services />
-      {/* <Productions /> */}
-      {/* <Studios /> */}
-      {/* <Technology /> */}
-      {/* <Employees /> */}
+      <ContactUs />
     </>
   )
 }
