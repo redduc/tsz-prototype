@@ -8,6 +8,10 @@ export default function TSZNavigation({addReveal}) {
     if(addReveal === true) {
       window.addEventListener("scroll", () => reveal("reveal", "active", 100));
     }
+
+    console.log("------------------------");
+    console.log(`${origin}`)
+    console.log("------------------------")
   }, [])
   const cssClass = (addReveal === true ? "reveal" : "")
 
