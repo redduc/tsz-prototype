@@ -3,7 +3,7 @@ import {Col, Container, Row} from 'react-bootstrap'
 import styles from '/components/EntryView.module.css'
 import TSZNavigation from '../components/Navigation';
 import {reveal} from '/components/utils';
-import { FaLinkedin, FaInstagram, FaPhone, FaAt } from "react-icons/fa";
+import { FaLinkedin, FaInstagram, FaMapMarkerAlt } from "react-icons/fa";
 
 export default function EntryView() {
   const titleWords = ["Spielfilme", "Werbung", "Events", "ADR", "Dokfilme"]
@@ -55,6 +55,7 @@ export default function EntryView() {
                 <div className={styles.socialIcons}>
                   <a href="#"><FaLinkedin /></a>
                   <a href="#"><FaInstagram /></a>
+                  <a href="#"><FaMapMarkerAlt /></a>
                 </div>
               </Col>
               <Col xs={6} md={8}>

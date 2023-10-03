@@ -10,7 +10,7 @@ body.no-padding-top {
   padding-top: 0;
   padding-bottom: 0;
 }
-.navbar .container {
+.navbar .container-fluid {
   padding-left: 6px;
   padding-right: 6px;
 }
