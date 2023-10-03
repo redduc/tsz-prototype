@@ -36,32 +36,18 @@ const services = [
     image: 'services-spiel-dokfilme.png'
   },
   {
-    id: 5,
-    title: 'Corporates',
-    subtitle: 'Der Soundtrack für Ihr Unternehmen',
-    text: 'Wir geben Ihrem Unternehmen eine Klangfarbe. Mit Atemberaubendem Sound verleihen wir Ihnen eine starken Auftritt.',
-    image: 'services-corporate.png'
-  },
-  {
-    id: 6,
-    title: 'Adaptionen',
-    subtitle: '',
-    text: 'Sie brauchen Ihre Videos oder Filme in anderen Sprachen? Dank internationalem Netzwerk kümmern wir uns um die Adaption, alles aus einer Hand.',
-    image: 'services-restauration.png'
-  },
-  {
-    id: 7,
-    title: 'Voices',
-    subtitle: 'Auf den richtigen Ton kommt es an',
-    text: 'Japanisch, Mexikanisch oder breitestes Berndeutsch - wir geben Ihrem Produkt eine Stimme. Dank unserem Netzwerk holen wir in Echtzeit Stimmen aus aller Welt in unsere Studios.',
-    image: 'services-sprecher.png'
-  },
-  {
     id: 8,
     title: 'Telefonie / Ansage',
     subtitle: 'Das müssen Sie hören!',
     text: 'Professionelle Durchsagen an Bahnhöfen, am Flughafen, im Stadion oder am Telefon. Mit der richtigen Stimme geben wir Ihnen die passende Identität.',
     image: 'services-telefonie.png'
+  },
+  {
+    id: 5,
+    title: 'Corporates',
+    subtitle: 'Der Soundtrack für Ihr Unternehmen',
+    text: 'Wir geben Ihrem Unternehmen eine Klangfarbe. Mit Atemberaubendem Sound verleihen wir Ihnen eine starken Auftritt.',
+    image: 'services-corporate.png'
   },
   {
     id: 9,
@@ -83,19 +69,12 @@ const services = [
     subtitle: 'Keinen Riss mehr im Film',
     text: 'Mit den modernsten technischen Möglichkeiten restaurieren wir Filmton, bringen unvollständige Aufnahmen auf Vordermann, eliminieren störende Geräusche und rekonstruieren Klangeindrücke.',
     image: 'services-restauration.png'
-  },
-  {
-    id: 12,
-    title: 'Diverses',
-    subtitle: 'Für jedes Projekt den richtigen Ton',
-    text: 'Sie haben ein ganz spezielles Projekt? Hören wir uns gerne an! Wir machen Ihren Event zum Ereignis oder verwandeln Ihre Geschichte zu einem packenden Hörspiel.',
-    image: 'services-events.png'
-  },
+  }
 ]
 
 function Service({service}) {
   return (
-    <Col xs={12} md={6} lg={4} xl={3} className={styles.cardCol + ' ' + styles.reveal}>
+    <Col xs={12} md={6} lg={4} xl={4} className={styles.cardCol + ' ' + styles.reveal}>
       <div className={styles.card}>
         <div className={styles.icon}>
           <img src={'services/' + service.image}  />
