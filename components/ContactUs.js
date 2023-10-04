@@ -23,7 +23,7 @@ export default function ContactUs() {
             <Row>
               <Col xs={12} md={6} lg={5}>
                 <div className={styles.textArea}>
-                  <p>Du hast eine Frage zu Sprecher, Urheberrecht oder zu einer möglichen Produktion? Schreib uns eine Email, ruf an oder komm einfach zu einem Kaffe vorbei.</p>
+                  <p>Du hast eine Frage zu einem Sprecher, Urheberrecht oder zu einer möglichen Produktion? Schreib uns eine Email, ruf an oder komm einfach zu einem Kaffee vorbei.</p>
                 </div>
               </Col>
               <Col xs={0} md={1} lg={2}>
