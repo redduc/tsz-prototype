@@ -31,7 +31,7 @@ export default function TSZNavigation({addReveal}) {
   return (
     <Navbar expand="lg" bg="white" variant="light" fixed="top" className={cssClass}>
       <Container fluid>
-        <Navbar.Brand href={appPath +" /"} >
+        <Navbar.Brand href={appPath}>
           {/* <img src="tszlogo.png" className='tszLogo'/> */}
           <img src="logo.jpg" className='tszLogo' />
         </Navbar.Brand>
