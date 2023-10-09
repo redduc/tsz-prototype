@@ -14,7 +14,7 @@ export default function ContactUs() {
         </Row>
       </Container>
       <div className={styles.wrapper}>
-        <video id="background-video" className="background-video" playsInline loop muted>
+        <video id="background-video" className="background-video" playsInline autoPlay loop muted>
           <source src="tsz-movie.mp4" type="video/mp4"/>
         </video>
         <div className={styles.contentGrid}>

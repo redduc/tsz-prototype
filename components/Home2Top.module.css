@@ -1,0 +1,151 @@
+.homeGrid {
+  position: relative;
+}
+
+.homeGrid .element {
+  width: 100%;
+  position: relative;
+  height: 0;
+  padding: 56.25% 0 0 0;
+  overflow: hidden;
+  margin-top: 0;
+  margin-bottom: 0;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.homeGrid .titlewrapper {  
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  top: calc(50% - 5.5rem);
+  text-align: center;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.homeGrid .video {  
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.homeGrid .element .elementContent {  
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  
+  border-bottom: 1px solid #FFF;
+}
+.homeGrid .element .elementContent img {  
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.socialIcons {
+  position: absolute;
+  bottom: 1rem;
+  left: 2rem;
+  font-size: 2.5em;
+}
+.socialIcons a {
+  color: #FFF;
+  margin-right: 0.4em;
+}
+.socialIcons a:last-child {
+  margin-right: 0;
+}
+
+.mainVideo .title {
+  display: inline-block;
+}
+.mainVideo .title:first-child {
+  margin-right: 0.28em;
+}
+.mainVideo .title span {
+  width: 4.8em;
+  display: inline-block;
+  text-align: left;
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 768px) {
+  .borderMDright {
+    border-right: 1px solid #FFF;
+  }
+}
+
+@media (min-width: 2001px) {
+  .mainVideo .title {
+    font-size: 5.5rem;
+    margin-bottom: 0;
+    font-weight: bold;
+    color: white;
+  }
+}
+@media (max-width: 2000px) {
+  .mainVideo .title {
+    font-size: 4rem;
+    margin-bottom: 0;
+    font-weight: bold;
+    color: white;
+  }
+}
+@media (max-width: 768px) {
+  .mainVideo .title {
+    font-size: 3rem;
+    margin-bottom: 0;
+    font-weight: bold;
+    color: white;
+  }
+}
+@media (max-width: 320px) {
+  .mainVideo .title {
+    font-size: 1rem;
+    margin-bottom: 0;
+    font-weight: bold;
+    color: white;
+  }
+}
+.mainVideo .titleWrapper {
+  padding-top: 18vh;
+}
+.mainVideo .title span {
+  color: transparent;
+  animation: blur 3s ease-out infinite;
+  -webkit-animation: blur 3s ease-out infinite;
+}
+@keyframes blur {
+  0%	{text-shadow:  0 0 100px #fff; opacity:0;}
+  20%	{text-shadow:  0 0 90px #fff;}
+  45%	{opacity: 1;}
+  60%	{text-shadow:  0 0 0px #fff;}
+  80%	{text-shadow:  0 0 0px #fff;}
+  90%	{opacity: 1;}
+  95%	{text-shadow:  0 0 90px #fff;}
+  100%	{text-shadow:  0 0 100px #fff; opacity:0;}
+}
+@-webkit-keyframes blur {
+  0%	{text-shadow:  0 0 100px #fff; opacity:0;}
+  20%	{text-shadow:  0 0 90px #fff;}
+  45%	{opacity: 1;}
+  60%	{text-shadow:  0 0 0px #fff;}
+  80%	{text-shadow:  0 0 0px #fff;}
+  90%	{opacity: 1;}
+  95%	{text-shadow:  0 0 90px #fff;}
+  100%	{text-shadow:  0 0 100px #fff; opacity:0;}
+}

@@ -11,7 +11,6 @@ export default function EntryView() {
 
   useEffect(() => {
     let timerId;
-      //console.log("useEffect init")
       timerId = setInterval(() => {
         setTitleWord((tw) => {
           let lastTitleIdx = titleWords.indexOf(tw)
@@ -29,9 +28,6 @@ export default function EntryView() {
   return (
     <>
       <div className={styles.mainrowwrapper}>
-        {/* <video id="background-video" className="background-video" playsInline autoPlay loop muted>        
-          <source src="tsz-movie.mp4" type="video/mp4"/>
-        </video> */}
         <video id="background-video" className="background-video" playsInline autoPlay loop muted>
           <source src="tsz-movie.mp4" type="video/mp4"/>
         </video>

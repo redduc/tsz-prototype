@@ -1,13 +1,13 @@
 import React, {useEffect, useState} from "react";
 import {Container, Nav, Navbar} from "react-bootstrap";
-import {reveal} from '/components/utils';
+import {showNavOnScroll} from '/components/utils';
 import { useRouter } from 'next/router';
 
 export default function TSZNavigation({addReveal}) {
   const [appPath, setAppPath] = useState("")
   useEffect(() => {
     if(addReveal === true) {
-      window.addEventListener("scroll", () => reveal("reveal", "active", 100));
+      window.addEventListener("scroll", () => showNavOnScroll());
     }
 
     //const { asPath } = useRouter();
@@ -27,17 +27,17 @@ export default function TSZNavigation({addReveal}) {
       setAppPath("")
     }
   }, [])
-  const cssClass = (addReveal === true ? "reveal" : "")
+  const cssClass = (addReveal === true ? "navhide" : "")
   return (
     <Navbar expand="lg" bg="white" variant="light" fixed="top" className={cssClass}>
       <Container fluid>
         <Navbar.Brand href={appPath}>
-          {/* <img src="tszlogo.png" className='tszLogo'/> */}
           <img src="logo.jpg" className='tszLogo' />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
+            <Nav.Link href={appPath + "/home2"}>HOME2</Nav.Link>
             <Nav.Link href={appPath + "/#servicearea"}>SERVICE</Nav.Link>
             <Nav.Link href={appPath + "/AboutUs"}>ABOUT</Nav.Link>
             <Nav.Link href={appPath + "/Studios"}>STUDIOS</Nav.Link>
