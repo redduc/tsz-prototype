@@ -10,7 +10,7 @@ const services = [
     title: 'Werbung',
     subtitle: 'Wir lassen Ihre Zielgruppe aufhorchen',
     text: 'Ob für TV oder Kino, für Radio, Web oder Social Media – wir produzieren auffallenden Sound für Ihren Werbespot in allen möglichen Tonformaten.',
-    linkText: 'mehr...',
+    linkText: './Werbung',
     image: 'services-werbung.png'
   },
   {
@@ -18,7 +18,6 @@ const services = [
     title: 'TV-Sendungen',
     subtitle: 'So hört es sich fern',
     text: 'Mit langjähriger Erfahrung in der Fernsehproduktion bringen wir Bilder und Gerschichten auf regionalen, nationalen und internationalen Sendern zum klingen.',
-    linkText: 'mehr...',
     image: 'services-tv-sendungen.png'
   },
   {
@@ -83,7 +82,7 @@ function Service({service}) {
         <h3>{service.subtitle}</h3>
         <p>{service.text}</p>
         {service.linkText != null &&
-          <a href="#">{service.linkText}</a>
+          <a href={service.linkText}>mehr...</a>
         }
       </div>
     </Col>

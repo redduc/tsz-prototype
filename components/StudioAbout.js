@@ -10,9 +10,6 @@ export default function StudioAbout() {
         <div className={styles.text}>
           <h2>STUDIO A - CINEMA</h2>
           <p>
-            Unsere Studios liegen in Zürich an verkehrsgünstiger Lage - nähe Zentrum, Bahnhof und Flughafen. Mit akustisch perfekt ausgebauten Aufnahme- und Regieräumen.
-          </p>
-          <p>
             Die Dolby Lizensierte Produktions-Suite für Spielfilme bietet Platz für bombastische Präsentationen. Das grosse Aufnahmestudio ist für die Simulation von Aussenaufnahmen und für Synchronproduktionen konzipiert.
           </p>
         </div>
@@ -38,7 +35,7 @@ export default function StudioAbout() {
                 <img src={'studios/Studio3.jpg'} className="img-fluid" />
                 <div className={styles.text}>                  
                     <h2>Stuido 3</h2>
-                    <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+                    <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
                 </div>
               </div>
             </div>
@@ -49,7 +46,7 @@ export default function StudioAbout() {
                 <img src={'about/studioentrance.jpg'} className="img-fluid" />
                 <div className={styles.text}>
                     <h2>Eingang</h2>
-                    <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+                    <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
                 </div>
               </div>
             </div>
