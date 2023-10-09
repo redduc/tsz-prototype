@@ -62,7 +62,7 @@ export default function StudioAbout() {
               <h1>Werbung</h1>
               <p>Wir lassen Ihre Zielgruppe aufhorchen</p>
               <p>Ob für TV oder Kino, für Radio, Web oder Social Media – wir produzieren auffallenden Sound für Ihren Werbespot in allen möglichen Tonformaten.</p>
-              <p><a href="#">Weitere Services</a></p>
+              <p><a href="./Productions">Weitere Services</a></p>
             </div>
           </Col>
           <Col xs={0} lg={1} xxl={2}></Col>

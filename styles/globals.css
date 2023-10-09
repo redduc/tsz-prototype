@@ -25,7 +25,7 @@ body.no-padding-top {
 }
 .navbar .navbar-nav .nav-link {
   color: #000;
-  /* text-transform: uppercase; */
+  text-transform: uppercase;
 }
 .navbar .navbar-toggler {
   border-color: #000;
