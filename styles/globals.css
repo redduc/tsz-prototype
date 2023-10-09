@@ -1,5 +1,14 @@
+@font-face {
+  font-family: 'Valera-Round';
+  src: url('/fonts/ValeraRound-Regular.ttf') format('ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
 body {
   padding-top: 86px;
+  font-family: 'Valera-Round', sans-serif;
 }
 body.no-padding-top {
   padding-top: 0;
