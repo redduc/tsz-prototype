@@ -30,9 +30,9 @@ export default function TSZNavigation({addReveal}) {
   const cssClass = (addReveal === true ? "navhide" : "")
   return (
     <Navbar expand="lg" bg="white" variant="light" fixed="top" className={cssClass}>
-      <Container fluid>
+      <Container className="navbarContainer">
         <Navbar.Brand href={appPath}>
-          <img src="logo.jpg" className='tszLogo' />
+          <img src="Logo_Tonstudiosz_black_text.webp" className='tszLogo' />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
