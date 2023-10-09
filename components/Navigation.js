@@ -42,7 +42,7 @@ export default function TSZNavigation({addReveal}) {
             <Nav.Link href={appPath + "/AboutUs"}>ABOUT</Nav.Link>
             <Nav.Link href={appPath + "/Studios"}>STUDIOS</Nav.Link>
             <Nav.Link href={appPath + "/Werbung"}>WERBUNG</Nav.Link>
-            {/* <Nav.Link href="./Work">Work (alt)</Nav.Link> */}
+            <Nav.Link href={appPath + "/Productions"}>Work (alt)</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
